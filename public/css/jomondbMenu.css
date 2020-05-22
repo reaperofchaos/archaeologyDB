@@ -1,0 +1,105 @@
+
+#menuRow nav {    
+  display: block;
+  text-align: left;
+}
+
+#menuRow nav ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+
+#menuRow .nav a {
+  display:block; 
+  background: #006dcc; 
+  color: #fff; 
+  text-decoration: none;
+  padding: 0.8em 1.8em;
+  font-size: 80%;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+#menuRow .nav{  
+  vertical-align: top; 
+  display: inline-block;
+  border-radius:6px;
+}
+
+#menuRow .nav li {
+  position: relative;
+}
+#menuRow .nav li li li a{
+    background: gray; 
+}
+#menuRow .nav > li { 
+  float: left; 
+  border-bottom: 4px #aaa solid; 
+  margin-right: 1px; 
+} 
+
+#menuRow .nav > li > a { 
+  margin-bottom: 1px;
+  box-shadow: inset 0 2em .33em -0.5em #006dcc; 
+}
+
+
+
+#menuRow .nav li:hover > a { 
+  color:orange; 
+}
+
+#menuRow .nav > li:first-child { 
+  border-radius: 4px 0 0 4px;
+} 
+
+#menuRow .nav > li:first-child > a { 
+  border-radius: 4px 0 0 0;
+}
+
+#menuRow .nav > li:last-child { 
+  border-radius: 0 0 4px 0; 
+  margin-right: 0;
+} 
+
+#menuRow .nav > li:last-child > a { 
+  border-radius: 0 4px 0 0;
+}
+
+#menuRow .nav li li a { 
+  margin-top: 1px;
+}
+
+#menuRow .nav ul {
+  position: absolute;
+  white-space: nowrap;
+  z-index: 1;
+  left: -99999em;
+}
+#menuRow .nav > li:hover > ul {
+  left: auto;
+  margin-top: 5px;
+  min-width: 100%;
+}
+#menuRow .nav > li li:hover > ul { 
+  left: 100%;
+  margin-left: 1px;
+  top: -1px;
+}
+/* arrow hover styling */
+#menuRow .nav > li > a:first-child:nth-last-child(2):before { 
+  border-top-color: #aaa; 
+}
+#menuRow .nav > li:hover > a:first-child:nth-last-child(2):before {
+  border: 5px solid transparent; 
+  margin-top:-5px
+}
+#menuRow .nav li li > a:first-child:nth-last-child(2):before {  
+  border-left-color: #aaa; 
+  margin-top: -5px
+}
+#menuRow .nav li li:hover > a:first-child:nth-last-child(2):before {
+  border: 5px solid transparent; 
+  right: 10px; 
+}

@@ -1,0 +1,68 @@
+
+/*#menuButton {
+  position: absolute;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 200%;
+  margin-top:100px;
+  margin-right: 0px;
+    width: 200px;
+	height: 50px; 
+transform:rotate(-90deg);
+}
+
+#mainMenu li{
+  width: 250px;
+  background-color: brown;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+#menuContainer {
+	width: 25%;
+	position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+	transform: translateX(-30px);
+}
+
+.table th, td{
+	padding: 15px;
+}
+/*#mainmenu {
+	position: relative;
+	right: -100px;
+}
+*/
+.no-gutters{
+	margin-right: 0;
+	margin-left: 0;
+	> .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+    
+
+input:hover{box-shadow:0px 0px 4px #fff;}
+input:active{top:1px;}
+
+
+.bgimage {
+  background-image: url('../pictures/jomon_pot.jpg');
+  background-position: center middle;
+  background-size: cover;
+  height: 200px;
+}
+
+.bgimage h1 {
+	font: bold 40px Georgia, sans-serif;
+	background-color: black;
+	margin:10px 5px 15px 20px;
+	color: green;
+	position: left bottom;
+}

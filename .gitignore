@@ -1,0 +1,7 @@
+dogu/
+old/
+sql/
+source/
+private/includes/
+private/db_credentials_web.php
+private/db_credentials.php

@@ -1,0 +1,1530 @@
+﻿var buttons = [{
+		"groupName": "Promo",
+		"subGroup": "",
+		"subGroup2": "",
+		"type": "radioButton",
+		"buttons": [{
+				"name": "DNS",
+				"action": "NoterCategory.getLevel2Buttons(&quot;DNS&quot;)",
+				"classType": "tablinks",
+				"value": "DNS",
+				"response": ""
+			},
+			{
+				"name": "DNW",
+				"action": "NoterCategory.getLevel2Buttons(&quot;DNW&quot;)",
+				"classType": "tablinks",
+				"value": "DNW",
+				"response": ""
+			},
+			{
+				"name": "TE",
+				"action": "NoterCategory.getLevel2Buttons(&quot;TE&quot;)",
+				"classType": "tablinks",
+				"value": "TE",
+				"response": ""
+			}
+		]
+	},
+	{
+		"groupName": "Promo",
+		"subGroup": "DNS",
+		"subGroup2": "",
+		"type": "radioButton",
+		"buttons": [{
+				"name": "Hughes",
+				"action": "NoterCategory.getLevel3Buttons(\"DNS\", \"Hughes\")",
+				"classType": "tablinks",
+				"value": "Hughes",
+				"response": ""
+			},
+			{
+				"name": "ViaSat",
+				"action": "NoterCategory.getLevel3Buttons(\"DNS\", \"ViaSat\")",
+				"classType": "tablinks",
+				"value": "ViaSat",
+				"response": ""
+			}
+		]
+	},
+	{
+		"groupName": "Promo",
+		"subGroup": "DNS",
+		"subGroup2": "Hughes",
+		"buttons": [{
+				"name": "gen5assignmentp",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Hughes Gen 5 Assignment Complete",
+				"response": "*******CBIS*******  Assigned technician to the Hughes Gen5 work order. Please tell the technician to resync Oasis."
+			},
+			{
+				"name": "gen5Confirm",
+				"action": "NewForm.buildForm(\"hughesConfirmForm\")",
+				"classType": "tablinks",
+				"value": "Gen 5 Order Confirm",
+				"response": ""
+			},
+			{
+				"name": "gen5error",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Hughes Gen 5 Error",
+				"response": "*******CBIS*******  Customer&rsquo;s Hughes Gen 5 order has failed. All Gen 5 codes have been manually removed. Customer will need to requalify for Gen 5 services."
+			},
+			{
+				"name": "gen5error3093",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Gen 5 Error 3093",
+				"response": "*******CBIS*******  Customer&rsquo;s Hughes Gen 5 order has failed. All codes manually removed. Failure was due to pre-existing order in Hughes system either thorugh Hughes direct or a different retailer. Customer will need to cancel pre-existing order, wait 24 hours and then call back to requalify for Gen 5."
+			},
+			{
+				"name": "cancelgen5",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Cancel Gen 5",
+				"response": "*******CBIS*******  Received request to have unprovisioned order cancelled. Submitted request. Refund will take 7-10 business days."
+			},
+			{
+				"name": "splitGen5",
+				"action": "NewForm.buildForm(\"splitGen5Form\")",
+				"classType": "tablinks",
+				"value": "Split Gen 5",
+				"response": ""
+			},
+			{
+				"name": "gen5Pole",
+				"action": "NewForm.buildForm(\"poleMountForm\")",
+				"classType": "tablinks",
+				"value": "Gen 5 Pole",
+				"response": ""
+			},
+			{
+				"name": "gen5Tech",
+				"action": "NewForm.buildForm(\"gen5TechForm\")",
+				"classType": "tablinks",
+				"value": "Gen 5 Tech",
+				"response": ""
+			},
+			{
+				"name": "incorrectunits",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Tech Visit Incorrect Units",
+				"response": "*******CBIS******* Corrected the Hughes Gen 5 work order that was showing the incorrect total of units."
+			}
+		]
+	},
+	{
+		"groupName": "Promo",
+		"subGroup": "DNS",
+		"subGroup2": "ViaSat",
+		"buttons": [{
+			"name": "createNewAccount",
+			"action": "NewForm.buildForm(\"addAccountForm\")",
+			"classType": "tablinks",
+			"value": "Create New Account",
+			"response": ""
+		}]
+	},
+	{
+		"groupName": "Promo",
+		"subGroup": "DNW",
+		"subGroup2": "",
+		"type": "radioButton",
+		"buttons": [{
+				"name": "Jeopardy",
+				"action": "NoterCategory.getLevel3Buttons(\"DNW\", \"Jeopardy\")",
+				"classType": "tablinks",
+				"value": "Jeopardy",
+				"response": ""
+			},
+			{
+				"name": "3PV",
+				"action": "NoterCategory.getLevel3Buttons(\"DNW\", \"3PV\")",
+				"classType": "tablinks",
+				"value": "3PV",
+				"response": ""
+			},
+			{
+				"name": "suspend",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Suspend",
+				"response": "*******CBIS*******  DNW service has been suspended due to non-pay."
+			},
+			{
+				"name": "restore",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Restore",
+				"response": "*******CBIS******* An order to restore service has been submitted. Please allow 24 hours for service to be restored."
+			},
+			{
+				"name": "changeService",
+				"action": "NoterCategory.getLevel3Buttons(\"DNW\", \"Change Service\")",
+				"classType": "tablinks",
+				"value": "Change",
+				"response": ""
+			},
+			{
+				"name": "followUp",
+				"action": "NoterCategory.getLevel3Buttons(\"DNW\", \"Follow-Up\")",
+				"classType": "tablinks",
+				"value": "Follow-Up",
+				"response": ""
+			},
+			{
+				"name": "disconnect",
+				"action": "NewForm.buildForm(\"disconnectForm\")",
+				"classType": "tablinks",
+				"value": "Disconnect",
+				"response": ""
+			},
+			{
+				"name": "mover",
+				"action": "NewForm.buildForm(\"moverForm\")",
+				"classType": "tablinks",
+				"value": "Mover",
+				"response": ""
+			},
+			{
+				"name": "New Connect",
+				"action": "NewForm.buildForm(\"newConnectForm\")",
+				"classType": "tablinks",
+				"value": "New Connect",
+				"response": ""
+			}
+		]
+	},
+	{
+		"groupName": "Promo",
+		"subGroup": "DNW",
+		"subGroup2": "Jeopardy",
+		"buttons": [{
+				"name": "plsReschedule",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Left VM Reschedule",
+				"response": "*******CBIS*******  Called the customer and left a vm advising the customer to call the main dish no to reschedule or cancel the dnw work order."
+			},
+			{
+				"name": "portInfoIncorrect",
+				"action": "NewForm.buildForm(\"portIncorrectForm\")",
+				"classType": "tablinks",
+				"value": "Incorrect Port Info",
+				"response": ""
+			},
+			{
+				"name": "jepcancelN",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Cancelled Due to Jeopardy",
+				"response": "****CBIS**** Cancelled order due to no response from customer. If cust calls back, please transfer to sales for new order."
+			},
+			{
+				"name": "noAccess",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "No Access",
+				"response": "*******CBIS******* Jeopardy Order: The Centurylink Tech was unable to install due to no access. If the customer calls in please reschedule the order through Dish Promo."
+			},
+			{
+				"name": "WorkloadJepDueDate",
+				"action": "NewForm.buildForm(\"workloadJepForm\")",
+				"classType": "tablinks",
+				"value": "Workload Jep New Due Date",
+				"response": ""
+			},
+			{
+				"name": "RescheduleWorkloadAfterDate",
+				"action": "NewForm.buildForm(\"rescheduleWorkloadForm\")",
+				"classType": "tablinks",
+				"value": "Workload Jep Reschedule After Due Date",
+				"response": ""
+			},
+			{
+				"name": "WorkloadJep",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Workload Jep Reschedule",
+				"response": "*******CBIS*******  The DNW new connect was jeopardy&rsquo;d due to workload. The appointment has been assigned to a tech and will be worked as ssoon as possible."
+			},
+			{
+				"name": "wrongAddr",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Wrong Address",
+				"response": "*******CBIS*******  Jeopardy Order: Per Centurylink the order was set up for the wrong address. If the customer calls in please contact CBIS to update the order address."
+			},
+			{
+				"name": "Custrequestedtocancel",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Customer Requested to Cancel",
+				"response": "*******CBIS*******  Jeopardy Order: Per Centurylink Tech Customer requested to cancel. If the customer calls in verify that they want to cancel the wireline order and process cancel if needed."
+			},
+			{
+				"name": "custReqResch",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Customer Requested to Reschedule",
+				"response": "*******CBIS*******  Jeopardy Order: Per Centurylink tech customer requested to reschedule. If the customer calls in please reschedule the order through Dish Promo."
+			},
+			{
+				"name": "diffSpeed",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Request Speed is not available",
+				"response": "*******CBIS*******  Jeopardy Order: Per Centurylink Tech Customer&rsquo;s home cannot get the DSL speed we requested. If the customer calls in please contact CBIS."
+			},
+			{
+				"name": "iW",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Inside Wiring",
+				"response": "*******CBIS*******  Jeopardy Order: Customer&rsquo;s home needs IW and/or jack work done. If customer calls in please chat with CBIS."
+			},
+			{
+				"name": "coFacility",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Co Facility",
+				"response": "*******CBIS*******  Jeoaprdy Order; There is an issue with the Centurylink Facilities. Centurylink has 72 business hours to provide an update. Customer will be updated when Centurylink has updated Dish."
+			},
+			{
+				"name": "bSW",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Needs BSW",
+				"response": "*******CBIS*******  Jeopardy Order: Home or Surrounding Area needs wiring work done. Dish cannot cover these charges. If customer calls in advise they will need to set up service with Centurylink Directly so Centurylink can repair/install necessary wiring."
+			},
+			{
+				"name": "goodToNID",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Good to NID",
+				"response": "*******CBIS*******  Per Centurylink Tech unable to complete inside install as customer was not home, service is good the NID. If install install is needed, schedule a tech visit."
+			},
+			{
+				"name": "pendingOrderJep",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Pending Orders",
+				"response": "*******CBIS******* DNW New connect has been jeopardy&rsquo;d due to pending Centurylink install. Customer will either need to cancel the Centurylink Install or cancel the DNW install."
+			},
+			{
+				"name": "existServ",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Existing Service",
+				"response": "*******CBIS*******  Jeopardy Order: Per Centurylink tech there is existing service at the customer&rsquo;s home. If the customer calls in please contact CBIS to address the issue."
+			}
+		]
+	},
+	{
+		"groupName": "Promo",
+		"subGroup": "DNW",
+		"subGroup2": "3PV",
+		"buttons": [{
+				"name": "3PVIncomplete",
+				"action": "NewForm.buildForm(\"tpvNoteForm\")",
+				"classType": "tablinks",
+				"value": "Incomplete 3PV",
+				"response": ""
+			},
+			{
+				"name": "3PVCancelled",
+				"action": "NewForm.buildForm(\"tpvCancelForm\")",
+				"classType": "tablinks",
+				"value": "Cancelled due to 3PV",
+				"response": ""
+			}
+		]
+	},
+	{
+		"groupName": "Promo",
+		"subGroup": "DNW",
+		"subGroup2": "Change Service",
+		"buttons": [{
+				"name": "createBBProject",
+				"action": "NewForm.buildForm(\"bbProjectForm\")",
+				"classType": "tablinks",
+				"value": "Create BB Project Order",
+				"response": ""
+			},
+			{
+				"name": "bbProjectComplete",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Create BB Project Order",
+				"response": "*******CBIS******* The technology upgrade from adsl2+ to vdsl2 has completed."
+			},
+			{
+				"name": "ChangePhoneNo",
+				"action": "NewForm.buildForm(\"changePhoneNoForm\")",
+				"classType": "tablinks",
+				"value": "Change Phone No",
+				"response": ""
+			},
+			{
+				"name": "techChange",
+				"action": "NewForm.buildForm(\"technologyChangeForm\")",
+				"classType": "tablinks",
+				"value": "Technology Change",
+				"response": ""
+			},
+			{
+				"name": "speedChange",
+				"action": "NewForm.buildForm(\"speedChangeForm\")",
+				"classType": "tablinks",
+				"value": "Speed Change",
+				"response": ""
+			},
+			{
+				"name": "addPhone",
+				"action": "NewForm.buildForm(\"addPhoneForm\")",
+				"classType": "tablinks",
+				"value": "Add Phone",
+				"response": ""
+			},
+			{
+				"name": "dropPhone",
+				"action": "NewForm.buildForm(\"dropPhoneForm\")",
+				"classType": "tablinks",
+				"value": "Drop Phone Keep DSL",
+				"response": ""
+			}
+		]
+	},
+	{
+		"groupName": "Promo",
+		"subGroup": "DNW",
+		"subGroup2": "Follow-Up",
+		"buttons": [{
+				"name": "Timeout1Day",
+				"action": "copyit()",
+				"classType": "tablinks",
+				"value": "Timeout Error Waiting One Day",
+				"response": "*******CBIS******* Put into follow-up for one day to see if the order confirms."
+			},
+			{
+				"name": "TimeoutNewOrder",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Timeout Error New Order Created",
+				"response": "*******CBIS******* A new order was created due to timeout error."
+			},
+			{
+				"name": "closed",
+				"action": "NewForm.buildForm(\"followupForm\")",
+				"classType": "tablinks",
+				"value": "Centurylink is Closed",
+				"response": ""
+			},
+			{
+				"name": "pendingOrders",
+				"action": "NewForm.buildForm(\"pendingOrderForm\")",
+				"classType": "tablinks",
+				"value": "Pending Orders",
+				"response": ""
+			}
+		]
+	},
+	{
+		"groupName": "Promo",
+		"subGroup": "TE",
+		"subGroup2": "",
+		"type": "radioButton",
+		"buttons": [{
+				"name": "TransOwn",
+				"action": "NoterCategory.getLevel3Buttons(\"TE\", \"TransOwn\")",
+				"classType": "tablinks",
+				"value": "TransferOwnership",
+				"response": ""
+			},
+			{
+				"name": "Educate",
+				"action": "NoterCategory.getLevel3Buttons(\"TE\", \"Educate\")",
+				"classType": "tablinks",
+				"value": "Educate",
+				"response": ""
+			},
+			{
+				"name": "Outage",
+				"action": "NoterCategory.getLevel3Buttons(\"TE\", \"Outage\")",
+				"classType": "tablinks",
+				"value": "Outage",
+				"response": ""
+			},
+			{
+				"name": "unreturnedEquipment",
+				"action": "NoterCategory.getLevel3Buttons(\"TE\", \"Unreturned Equipment\")",
+				"classType": "tablinks",
+				"value": "Unreturned Equipment",
+				"response": ""
+			},
+			{
+				"name": "removeLastPay",
+				"action": "NewForm.buildForm(\"removeLastPaymentForm\")",
+				"classType": "tablinks",
+				"value": "Remove Last Payment",
+				"response": ""
+			},
+			{
+				"name": "waiveETF",
+				"action": "NewForm.buildForm(\"etfForm\")",
+				"classType": "tablinks",
+				"value": "Credit ETF",
+				"response": ""
+			},
+			{
+				"name": "sevenPl",
+				"action": "NewForm.buildForm(\"sevenPlusForm\")",
+				"classType": "tablinks",
+				"value": "7+ Receiver",
+				"response": ""
+			},
+			{
+				"name": "sendBill",
+				"action": "NewForm.buildForm(\"sendBillForm\")",
+				"classType": "tablinks",
+				"value": "Send Bill Request",
+				"response": ""
+			},
+			{
+				"name": "sendAmdocsBill",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Send Amdocs Bill Request",
+				"response": "Hello,<br/><br/>As per your request, we have attached the requested billing statement.<br/><br/>If you need any additional assistance, please contact our commercial support group at 1-888-580-6656 or use our self-serve options found at https://businesscare.dish.com<br /><br />Please do not respond to this email.  <br /><br />Thank you,<br />CXO – Business Integrations Support<br />Dish Network L.L.C."
+			},
+			{
+				"name": "waiveCommitment",
+				"action": "NewForm.buildForm(\"waiveCommitmentForm\")",
+				"classType": "tablinks",
+				"value": "Waive Commitment",
+				"response": ""
+			}
+		]
+	},
+	{
+		"groupName": "Promo",
+		"subGroup": "TE",
+		"subGroup2": "TransOwn",
+		"buttons": [{
+				"name": "transOfOwn",
+				"action": "NewForm.buildForm(\"tofNoteForm\")",
+				"classType": "tablinks",
+				"value": "Transfer of Ownership",
+				"response": ""
+			},
+			{
+				"name": "transOfOwnConf",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Transfer Of Ownership Confirmation",
+				"response": "Before I proceed. I just want to make sure that you talked with the customer and advised there is a 2 year commitment with a $10 x 12 credit. Any current offers or adjustments will be forfeited at the time of transfer. The customer will be responsible for any activation fees and the first month's bill and that must be paid today. Please let me know if the customer agrees to this and would still like to proceed with the transfer of ownership."
+			},
+			{
+				"name": "IDVerification",
+				"action": "NewForm.buildForm(\"idVerificationForm\")",
+				"classType": "tablinks",
+				"value": "ID Verification Questions",
+				"response": ""
+			},
+			{
+				"name": "creditQual",
+				"action": "NewForm.buildForm(\"creditQualForm\")",
+				"classType": "tablinks",
+				"value": "Credit Qualification",
+				"response": ""
+			}
+		]
+	},
+	{
+		"groupName": "Promo",
+		"subGroup": "TE",
+		"subGroup2": "Educate",
+		"buttons": [{
+				"name": "waiveNonRecovered",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Send Boxes for Non-Recovered Equipment",
+				"response": "Unfortunately, we cannot waive any non-recovered equipment if it was recoverable at the time the customer disconnected. If the customer would like to return the equipment, please create a label using ratelinx (in okta). Community > Flows > Order/Cancel > Sending Return Shipping Labels - Ratelinx"
+				},
+				{
+				"name": "addHDFFL",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Add HDFL",
+				"response": "You can add the HD Free For Life. Just go to the plans tab and click Services-&gt;Video Programming-&gt;HD->HD Addon-Free-&gt;HD250 Free"
+			},
+			{
+				"name": "ki48464",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "ki48464 - no tech visits available",
+				"response": "The Promo error &apos; This request cannot be completed due to technical issues &apos; means there are not any tech appointments available in the next 30 days. Please &#43;1 KI 48464 under Tool-&gt;Promo and follow the Compass flow Community > Tools > Compass > Technician Visit Not Available Soon Enough. GET has a scheduling escalations process that they can follow."
+			},
+			{
+				"name": "nonOrbital",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "nonOrbital Error",
+				"response": "This error occurs because there is as problem with the orbitals on the account. Please verify the orbitals with the customer Community > Equipment & Technology > Signal Flow > References > Dish/Orbital Configuration. If they are correct and you still see the error, you can add the Bypass Dish Config TV tag. It is found in the Plans Tab and click Services-&gt;Tech Visit-&gt;Video-&gt;Field Support Team-&gt;Bypass Dish Config TV. Then you can attempt to add the programming change or credit. Once you have made the necessary changes, please click Finish and Review in Promo."
+			},
+			{
+				"name": "unableToDisconnectDNW",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Unable to Disconnect DNW",
+				"response": "Please check on the Internet/Phone Tab in Promo and verify that the Dishnet Number is separated by -&apos;s If any are missing please add them and then click the Sync button. After that please try to create a disconnect order again and let me know if you are still getting an error."
+			},
+			{
+				"name": "removeHPProgramming",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Remove HP Programming",
+				"response": "You can remove the half-price programming using Promo. First, go to the the Plans tab and add the regular price version of the package and then click Price It. You will then see a pop-up where you can remove the half-priced version of the programming. Then you can remove the regular price version from the side car before clicking Finish/Review."
+			},
+			{
+				"name": "unableToPause",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Unable to Pause Account - Dish Outdoors",
+				"response": "This is a Dish Outdoors account and is not eligible to be paused. Please refer to Community > Accounts > Account States > DISH Pause"
+			},
+			{
+				"name": "waiveLNB",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Waive LNB",
+				"response": "Per the 10/03 Business release. Please follow Community > Billing > Waives > Waive One-Time Item for information about waiving the LNB. If the account is active please chat with Loyalty, Advanced Account Support, or a Coach to set up an LNB Fee Exception. If it is disconnected pleased create an item reversal using Dish Promo > Bill tab > Credit History. Right-click on the $49 Unreturned Equipment fee to reverse the charge"
+			},
+			{
+				"name": "intlWorld",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Add International World",
+				"response": "International world add-on package is hidden in Promo. You can find it under Services-&gt;Video Programming-&gt;International-&gt;General International & Cricket -&gt; Add-on -&gt;Int&apos;l: World"
+			},
+			{
+				"name": "wallyLeasedFee",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Wally/211 Fee",
+				"response": "The $7 fee is valid because the customer only has a single Wally/211. Per Community &gt; Billing &gt; Fees &gt; Monthly Fees, customers that started service with Dish after 4/11/2018 will be charged a first receiver fee for accounts with  a Wally or 211 as their first receiver "
+			},
+			{
+				"name": "techWantsToChangeEquip",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Tech Requests Equipment Change",
+				"response": "Please follow Community > Flows > Modify Work Order > Modification Due to No Inventory if the tech requests to change Equipment. If this is an approved change (Hopper to Hopper w/Sling, 211 to 211z/211k, or 211 to Wally) please modify the work order in Promo. If not check for a memo from the Hub and see if a resolution has been provided. If there is no Promo memo, then advise the tech to contact his FSM."
+			},
+			{
+				"name": "doNotSetToEbill",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Do Not Set To eBill ",
+				"response": "CBIS does not add the do not set to ebill tag. Please click on Helpful Links-&gt;Feedback Tool in Promo and click on Business and +1 KI 54 Requests to receive a paper bill. "
+			},
+			{
+				"name": "unableToCreateOTA",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "OTA Order Automatically Closes",
+				"response": "There is a known issue with Promo that is causing the OTA work order to close automatically. Please add the Bypass Dish Config TV tag found at Services->Tech Visit->Field Support Team->Bypass Dish Config TV. Then add the necessary order for the OTA found at Services->Tech Visit->Field Support Team->Adapter and Outdoor Installation Services Only OR Adapter and Indoor Installation Services Only"
+			},
+			{
+				"name": "unableToPauseConfig",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Unable to Pause due to Promo Error",
+				"response": "Please  add the Bypass Dish Config TV tag. It is found in the Plans Tab and click Services->Tech Visit->Video->Field Support Team->Bypass Dish Config TV. Then you can attempt to pause the account and then hit finish and review."
+			},
+			{
+				"name": "unableToRedeemRAF",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Unable to Redeem RAF Offer",
+				"response": "There is an open feedback case for customers that cannot redeem Refer A Friend offers using Mydish.com. CBIS does not have a work around for this issue. Please Click Helpful Links-> Feedback Tool. Then click Tools-> Mydish.com and then +1 KI 46822."
+			},
+			{
+				"name": "unableToCreateMyDish",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Unable to Create Mydish.com account",
+				"response": "There is an open feedback case for customers that cannot create a Mydish.com account. CBIS does not have a work around for this issue. Please click Helpful Links-> Feedback Tool. Then click Tools-> Mydish.com and then +1 KI 56513."
+			}
+		]
+	},
+	{
+		"groupName": "Promo",
+		"subGroup": "TE",
+		"subGroup2": "Outage",
+		"buttons": [
+			{
+				"name": "unableToCreateTechVisitOutage",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Unable to Create tech visit (outage)",
+				"response": "There is a promo error affecting the whole enterprise. Please advise the customer to call back in a few hours to schedule the tech visit."
+			},
+			{
+				"name": "TechVisitOutageResolved",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Unable to Create tech visit (Resolved)",
+				"response": "The Promo error has been resolved. Please refresh the account and attempt to create the tech visit again. If you are still experiencing a problem. Please close out of Promo complete and restart it. "
+			}
+		]
+	},
+	{
+		"groupName": "Promo",
+		"subGroup": "TE",
+		"subGroup2": "Unreturned Equipment",
+		"buttons": [{
+				"name": "waiveURE",
+				"action": "NewForm.buildForm(\"ureNoteForm\")",
+				"classType": "tablinks",
+				"value": "Unreturned Equipment Fee Reversed",
+				"response": ""
+			},
+			{
+				"name": "notDisabled24Hours",
+				"action": "NewForm.buildForm(\"notDisabled24HoursForm\")",
+				"classType": "tablinks",
+				"value": "Not Disabled 24 Hours",
+				"response": ""
+			},
+			{
+				"name": "ureDenied",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Unreturned Equipment Fee Denied",
+				"response": "*******CBIS*******  Received request to update Unreturned Equipment Status. Resolution: Did Not Waive. Please have the customer return the equipment to DISH to avoid/reverse any unreturned equipment fees."
+			}
+		]
+	},
+
+	{
+		"groupName": "Fraud",
+		"subGroup": "",
+		"subGroup2": "",
+		"type": "radioButton",
+		"buttons": [{
+				"name": "id01",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "ID 01 <br />Suspicious New Connect",
+				"response": "Account has been flagged for verification (ID 01), transfer to fraud prevention for all concerns with this account ****no exceptions****"
+			},
+			{
+				"name": "paymentfraud",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Payment Fraud",
+				"response": "Account shows history of suspicious payment activity, (detail the suspected activity here), escalated for further investigation"
+			},
+			{
+				"name": "thirdpartyfraud",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Third Party Fraud",
+				"response": "Suspected fraudulent activity on account, (detail the suspected activity here), transfer to fraud prevention for further account investigation **** no exeptions ****"
+			},
+			{
+				"name": "accountTakeOver",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Account Takeover",
+				"response": "Suspected account takeover / phishing attempts on account, transfer to fraud prevention for further account investigation **** no exceptions ****"
+			},
+			{
+				"name": "id05",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "ID 05",
+				"response": "Account has been flagged for verification (ID 05), transfer to fraud prevention for all concerns with this account **** no exceptions****"
+			},
+			{
+				"name": "accountpacking",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Account Packing",
+				"response": "Account suspected of Account Packing, transfer to fraud prevention for further account investigation **** no exceptions ****"
+			},
+			{
+				"name": "commericialResidential",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Commercial <br />with<br /> Residential Prin",
+				"response": "Account suspected of being a commercial property but residential prin, transfer to fraud prevention for further account investigation **** no exceptions ****"
+			}
+		]
+	},
+
+	{
+		"groupName": "MiscTools",
+		"subGroup": "",
+		"subGroup2": "",
+		"type": "radioButton",
+		"buttons": [{
+				"name": "dnw",
+				"action": "NoterCategory.getLevel2Buttons(&quot;DNW Tools&quot;)",
+				"classType": "tablinks",
+				"value": "DNW Tools",
+				"response": ""
+			},
+			{
+				"name": "emails",
+				"action": "NoterCategory.getLevel2Buttons(&quot;Emails&quot;)",
+				"classType": "tablinks",
+				"value": "Emails",
+				"response": ""
+			},
+			{
+				"name": "rolodex",
+				"action": "PhoneNo.create()",
+				"classType": "tablinks",
+				"value": "Rolodex",
+				"response": ""
+			},
+			{
+				"name": "networkDrives",
+				"action": "Table.create_table(networkDrives)",
+				"classType": "tablinks",
+				"value": "Network Drives",
+				"response": ""
+			},
+			{
+				"name": "ki",
+				"action": "KI.createKI()",
+				"classType": "tablinks",
+				"value": "KI",
+				"response": ""
+			},
+			{
+				"name": "spid",
+				"action": "SPID.openSPID()",
+				"classType": "tablinks",
+				"value": "SPID",
+				"response": ""
+			},
+			{
+				"name": "dishfiber",
+				"action": "NoterCategory.getLevel2Buttons(&quot;Dish Fiber&quot;)",
+				"classType": "tablinks",
+				"value": "Dish Fiber",
+				"response": ""
+			},
+			{
+				"name": "commercial",
+				"action": "NoterCategory.getLevel2Buttons(&quot;Commercial Tools&quot;)",
+				"classType": "tablinks",
+				"value": "Commercial Tools",
+				"response": ""
+			},
+			{
+				"name": "fraudTool",
+				"action": "MiscTools.popitup(&quot;https://secfda.echostar.com/Default.aspx&quot;)",
+				"classType": "tablinks",
+				"value": "Fraud Tool",
+				"response": ""
+			},
+			{
+				"name": "dnsPackages",
+				"action": "DNSPackages.create()",
+				"classType": "tablinks",
+				"value": "DNS Packages",
+				"response": ""
+			},
+			{
+				"name": "outletCodes",
+				"action": "createTab()",
+				"classType": "tablinks",
+				"value": "Outlet Codes",
+				"response": "<table class=&#39;table&#39;><tr><th>Service Code </th><th>Description</th><th>Receiver Model(s)</th><th>Leased/Purchased </th></tr><tr><td> $= </td><td>Nclsdrec</td><td> Pri All</td><td> Leased </td></tr><tr><td> N9 <td>Ncprec</td><td> prim All</td><td> Purchased </td></tr><tr><td> 3+ </td><td>Nc Lhdduorec</td><td> HD Duo</td><td> Leased </td></tr><tr><td>30</td><td> P Hd Duo Rec</td><td> HD Duo</td><td> Purchased </td></tr><tr><td> 34 </td><td>Nc Lhdduodvr</td><td> HD Duo DVR</td><td> Leased </td></tr><tr><td> 36 </td><td>Phdduodvrrec </td><td>HD Duo DVR</td><td> Purchased </td></tr><tr><td> 3} </td><td>Ncl hd solorec</td><td> HD Solo</td><td> Leased </td></tr><tr><td> 3~</td><td> P Hdsolo Rec</td><td> HD Solo</td><td> Purchased </td></tr><tr><td> 31 </td><td>Nc Lhdsoldvr</td><td> HD Solo DVR</td><td> Leased </td></tr><tr><td> 33</td><td> Phdsoldvrrec </td><td>HD Solo DVR</td><td> Purchased </td></tr><tr><td> TS</td><td> Hop Rcvr Lse</td><td> Hopper & Hopper w/ Sling</td><td> Leased </td></tr><tr><td> TR </td><td>Hop Rcvr Own</td><td> Hopper & Hopper w/ Sling</td><td> Purchased </td></tr><tr><td> F></td><td> Joeyrcvr Lse</td><td> Joey</td><td> Leased </td></tr><tr><td> F= </td><td>Joeyrcvr Own</td><td> Joey </td><td>Purchased </td></tr><tr><td> 0*</td><td> Nc L Duo Rec</td><td> SD Duo </td><td>Leased </td></tr><tr><td> 0: </td><td>P Duo Rec</td><td> SD Duo</td><td> Purchased </td></tr><tr><td> 0Q</td><td> Nc L Duodvr</td><td> SD Duo DVR</td><td> Leased </td></tr><tr><td> 2:</td><td> P Duodvrrec</td><td> SD Duo DVR </td><td>Purchased </td></tr><tr><td> 0-</td><td> Nc L Solorec </td><td>SD Solo</td><td> Leased </td></tr><tr><td> 0$</td><td> P Solo Rec</td><td> SD Solo</td><td> Purchased </td></tr><tr></tr><td> 0;</td><td> Nc L Solodvr</td><td> SD Solo DVR</td><td> Leased </td></tr><tr><td>  0+</td><td> P Solodvrrec</td><td> SD Solo DVR</td><td> Purchased </td></tr><tr><td> CA2</td><td> Sjoeyrcvrlse</td><td> Super Joey</td><td> Leased </td></tr><tr><td> CA1 </td><td> sjoeyrcvrown</td><td> Super Joey</td><td> Purchased </td></tr><tr><td> WC</td><td> Virtualjoey </td><td> Virtual Joey</td><td> </td></tr><tr><td> BB4 </td><td>Wirejoey lse</td><td> Wireless Joey</td><td> Leased </td></tr><tr><td> BB3</td><td> Wirejoey own</td><td> Wireless Joey</td><td> Purchased </td></tr><tr><td> DQ5</td><td> Hopper 3</td><td>Hopper 3</td><td></td></tr></table>"
+			},
+			{
+				"name": "csgOrders",
+				"action": "NoterCategory.getLevel2Buttons(&quot;CSG Orders&quot;)",
+				"classType": "tablinks",
+				"value": "CSG Orders",
+				"response": ""
+			},
+			{
+				"name": "csgCodeSearch",
+				"action": "CSGCodeLookup.create()",
+				"classType": "tablinks",
+				"value": "CSG Code Search",
+				"response": ""
+			},
+			{
+				"name": "overrides",
+				"action": "NoterCategory.getLevel2Buttons(&quot;Coach Overrides&quot;)",
+				"classType": "tablinks",
+				"value": "Coach Overrides",
+				"response": ""
+			},
+			{
+				"name": "outboundRules",
+				"action": "createTab()",
+				"classType": "tablinks",
+				"value": "Outbound Rules",
+				"response": "<h3> Outbound rules </h3><p>Individual account can only be called a max of 3 times for a particular issue </p><table class=&#39;table&#39;><tr><th>Day</th><th>Hours</th></tr><tr><td>Monday - Friday</td><td>8am to 9pm</td></tr><tr><td>Saturday</td><td>9am to 6pm</td></tr><tr><td>Sunday</td><td>Do not call</td></tr></table><h3>Holidays</h3><p>Do not call on these days</p><table class=&#39;table&#39;><tr><th>Holiday</th><th>Day</th><th>State</th></tr><tr><td>New Year&rsquo;s Day</td><td>Jan 1st, 2018</td><td>US</td></tr><tr><td>Martin Luther King Day</td><td>Jan 15th, 2018</td><td>US</td></tr><tr><td>President&rsquo;s Day</td><td>Feb 19, 2018</td><td>US</td></tr><tr><td>Easter Sunday</td><td>April 1st, 2018</td><td>US</td></tr><tr><td>Memorial Day</td><td>May 28th, 2018</td><td>US</td></tr><tr><td>Independence Day</td><td>July 4th, 2018</td><td>US</td></tr><tr><td>Labor Day</td><td>September 3rd, 2018</td><td>US</td></tr><tr><td>Columbus Day</td><td>October 8th, 2018</td><td>US</td></tr><tr><td>Veteran&rsquo;s Day</td><td>September 11th, 2018</td><td>US</td></tr><tr><td>Veteran&rsquo;s Day Observed</td><td>September 12th, 2018</td><td>US</td></tr><tr><td>Thanksgiving</td><td>November 23rd, 2018</td><td>US</td></tr><tr><td>Day After Thanksgiving</td><td>November 24th, 2018</td><td>US</td></tr><tr><td>Christmas Eve</td><td>December 24th, 2018</td><td>US</td></tr><tr><td>Christmas Day</td><td>December 25th, 2018</td><td>US</td></tr><tr><td>New Year&rsquo;s Eve</td><td>December 31st, 2018</td><td>US</td></tr><tr><td>New Year&rsquo;s Day</td><td>January 1st, 2018</td><td>US</td></tr><tr><td>Mardi Gras</td><td>February 13th, 2018</td><td>Alabama</td></tr><tr><td>Confederate Memorial Day</td><td>April 23rd, 2018</td><td>Alabama</td></tr><tr><td>Jefferson Davis&rsquo; Birthday</td><td>June 4th, 2019</td><td>Alabama</td></tr><tr><td>Day after New Year&rsquo;s Day</td><td>Jan 2nd, 2018</td><td>Louisiana</td></tr><tr><td>Battle of New Orleans</td><td>Jan 8th, 2018</td><td>Louisiana</td></tr><tr><td>Robert E. Lee Day</td><td>Jan 19th, 2018</td><td>Louisiana</td></tr><tr><td>Mardi Gras</td><td>Feb 13th, 2018</td><td>Louisiana</td></tr><tr><td>Good Friday</td><td>March 30th, 2018</td><td>US</td></tr><tr><td>Confederate Memorial Day</td><td>June 4th, 2018</td><td>Louisiana</td></tr><tr><td>Huey P. Long Day</td><td>August 30th, 2018</td><td>Louisiana</td></tr><tr><td>All Saints Day</td><td>November 1st, 2018</td><td>Louisiana</td></tr><tr><td>Acadian Day</td><td>November 23rd, 2018</td><td>Louisiana</td></tr><tr><td> Day after Christmas Day</td><td>December 26th, 2018</td><td>Louisiana</td></tr><tr><td>Confederate Memorial Day</td><td>April 30th, 2018</td><td>Mississippi</td></tr><tr><td>Rhode Island Independence Day</td><td>May 4th, 2018</td><td>Rhode Island</td></tr><tr><td>Victory Day</td><td>August 13th, 2018</td><td>Rhode Island</td></tr><tr><td>Election Day</td><td>November 6th, 2018</td><td>Rhode Island</td></tr><h3> Outbound rules </h3><p>Individual account can only be called a max of 3 times for a particular issue </p><table class=&#39;table&#39;><tr><th>Day</th><th>Hours</th></tr><tr><td>Monday - Friday</td><td>8am to 9pm</td></tr><tr><td>Saturday</td><td>9am to 6pm</td></tr><tr><td>Sunday</td><td>Do not call</td></tr></table><h3>Holidays</h3><p>Do not call on these days</p><table class=&#39;table&#39;><tr><th>Holiday</th><th>Day</th><th>State</th></tr><tr><td>New Year&rsquo;s Day</td><td>Jan 1st, 2018</td><td>US</td></tr><tr><td>Martin Luther King Day</td><td>Jan 15th, 2018</td><td>US</td></tr><tr><td>President&rsquo;s Day</td><td>Feb 19, 2018</td><td>US</td></tr><tr><td>Easter Sunday</td><td>April 1st, 2018</td><td>US</td></tr><tr><td>Memorial Day</td><td>May 28th, 2018</td><td>US</td></tr><tr><td>Independence Day</td><td>July 4th, 2018</td><td>US</td></tr><tr><td>Labor Day</td><td>September 3rd, 2018</td><td>US</td></tr><tr><td>Columbus Day</td><td>October 8th, 2018</td><td>US</td></tr><tr><td>Veteran&rsquo;s Day</td><td>September 11th, 2018</td><td>US</td></tr><tr><td>Veteran&rsquo;s Day Observed</td><td>September 12th, 2018</td><td>US</td></tr><tr><td>Thanksgiving</td><td>November 23rd, 2018</td><td>US</td></tr><tr><td>Day After Thanksgiving</td><td>November 24th, 2018</td><td>US</td></tr><tr><td>Christmas Eve</td><td>December 24th, 2018</td><td>US</td></tr><tr><td>Christmas Day</td><td>December 25th, 2018</td><td>US</td></tr><tr><td>New Year&rsquo;s Eve</td><td>December 31st, 2018</td><td>US</td></tr><tr><td>New Year&rsquo;s Day</td><td>January 1st, 2018</td><td>US</td></tr><tr><td>Mardi Gras</td><td>February 13th, 2018</td><td>Alabama</td></tr><tr><td>Confederate Memorial Day</td><td>April 23rd, 2018</td><td>Alabama</td></tr><tr><td>Jefferson Davis&rsquo; Birthday</td><td>June 4th, 2019</td><td>Alabama</td></tr><tr><td>Day after New Year&rsquo;s Day</td><td>Jan 2nd, 2018</td><td>Louisiana</td></tr><tr><td>Battle of New Orleans</td><td>Jan 8th, 2018</td><td>Louisiana</td></tr><tr><td>Robert E. Lee Day</td><td>Jan 19th, 2018</td><td>Louisiana</td></tr><tr><td>Mardi Gras</td><td>Feb 13th, 2018</td><td>Louisiana</td></tr><tr><td>Good Friday</td><td>March 30th, 2018</td><td>US</td></tr><tr><td>Confederate Memorial Day</td><td>June 4th, 2018</td><td>Louisiana</td></tr><tr><td>Huey P. Long Day</td><td>August 30th, 2018</td><td>Louisiana</td></tr><tr><td>All Saints Day</td><td>November 1st, 2018</td><td>Louisiana</td></tr><tr><td>Acadian Day</td><td>November 23rd, 2018</td><td>Louisiana</td></tr><tr><td> Day after Christmas Day</td><td>December 26th, 2018</td><td>Louisiana</td></tr><tr><td>Confederate Memorial Day</td><td>April 30th, 2018</td><td>Mississippi</td></tr><tr><td>Rhode Island Independence Day</td><td>May 4th, 2018</td><td>Rhode Island</td></tr><tr><td>Victory Day</td><td>August 13th, 2018</td><td>Rhode Island</td></tr><tr><td>Election Day</td><td>November 6th, 2018</td><td>Rhode Island</td></tr><tr><td>Pioneer Day</td><td>July 24th, 2018</td><td>Utah</td></tr></table><tr><td>Pioneer Day</td><td>July 24th, 2018</td><td>Utah</td></tr></table>"
+			},
+			{
+				"name": "clarify",
+				"action": "MiscTools.popitup(&#39;http://mnet.dish.com/programs/clarify_lookup/Clarify_SIM_GUI.asp&#39;)",
+				"classType": "tablinks",
+				"value": "Clarify",
+				"response": ""
+			},
+			{
+				"name": "parsers",
+				"action": "NoterCategory.getLevel2Buttons(&quot;Parsers&quot;)",
+				"classType": "tablinks",
+				"value": "Parsers",
+				"response": ""
+			},
+			{
+				"name": "builder",
+				"action": "NoterCategory.getLevel2Buttons(&quot;Button Builder&quot;)",
+				"classType": "tablinks",
+				"value": "Button Builder",
+				"response": ""
+			},
+			{
+				"name": "aow",
+				"action": "AgentOfWeek.create()",
+				"classType": "tablinks",
+				"value": "Agent of the Week",
+				"response": ""
+			},
+			{
+				"name": "modulationForm",
+				"action": "Modulation.create()",
+				"classType": "tablinks",
+				"value": "Channel Modulation",
+				"response": ""
+			}
+		]
+	},
+	{
+		"groupName": "MiscTools",
+		"subGroup": "DNW Tools",
+		"subGroup2": "",
+		"type": "radioButton",
+		"buttons": [{
+				"name": "Remarks",
+				"action": "NoterCategory.getLevel3Buttons(&quot;DNW Tools&quot;, &quot;Remarks&quot;)",
+				"classType": "tablinks",
+				"value": "Remarks",
+				"response": ""
+			},
+			{
+				"name": "templates",
+				"action": "NoterCategory.getLevel3Buttons(&quot;DNW Tools&quot;, &quot;Templates&quot;)",
+				"classType": "tablinks",
+				"value": "Templates",
+				"response": ""
+			},
+			{
+				"name": "portInfo",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Port Info",
+				"response": "Current Account No <br/>Current Bill Name <br/>Current Bill Address <br/>Current Pin "
+			},
+			{
+				"name": "usocs",
+				"action": "UsocList.create()",
+				"classType": "tablinks",
+				"value": "USOCs",
+				"response": ""
+			},
+			{
+				"name": "addPhoneUsocs",
+				"action": "createTab()",
+				"classType": "tablinks",
+				"value": "Add Phone USOCs",
+				"response": "<table class=&#39;table&#39;><tr><th>USOCS</th></tr><tr><td>C GFR </td></tr><tr><td> T 1FR </td></tr><tr><td> D NP3 </td></tr><tr><td> N NNK </td></tr><tr><td> N ESC </td></tr><tr><td> N NCE </td></tr><tr><td> N NSS </td></tr><tr><td> N AYK </td></tr><tr><td> N ESM </td></tr><tr><td> N NSQ </td></tr><tr><td> N N2W </td></tr><tr><td> Optional </td></tr><tr><td> N NPU </td></tr><tr><td> N FVJ </td></tr></table>"
+			},
+			{
+				"name": "lsrReader",
+				"action": "MiscTools.popitup(&quot;./miscTools/lsr.html&quot;)",
+				"classType": "tablinks",
+				"value": "LSR Reader",
+				"response": ""
+			},
+			{
+				"name": "vfoJeopardys",
+				"action": "Jeopardy.build()",
+				"classType": "tablinks",
+				"value": "VFO Jeopardy Codes",
+				"response": ""
+			},
+			{
+				"name": "sigList",
+				"action": "Sig.build()",
+				"classType": "tablinks",
+				"value": "SIG",
+				"response": ""
+			}
+		]
+	},
+	{
+		"groupName": "MiscTools",
+		"subGroup": "DNW Tools",
+		"subGroup2": "Remarks",
+		"buttons": [{
+				"name": "selfInstall",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Self Install",
+				"response": "Please tag at DMARC and cross connect IW. Thanks"
+			},
+			{
+				"name": "techVisit",
+				"action": "copyit()",
+				"classType": "tablinks",
+				"value": "Tech Visit",
+				"response": "Please call customer on your way to the home. Thank you!"
+			},
+			{
+				"name": "embarqTechVisit",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Embarq Tech Visit",
+				"response": "Please call customer on way to home."
+			},
+			{
+				"name": "dropPhone",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Drop Phone",
+				"response": "UHR to GFR, please assign new data TN. Thank you!"
+			}
+		]
+	},
+	{
+		"groupName": "MiscTools",
+		"subGroup": "Emails",
+		"subGroup2": "",
+		"type": "radioButton",
+		"buttons": [{
+				"name": "Escalations",
+				"action": "NoterCategory.getLevel3Buttons(&quot;Emails&quot;, &quot;Escalations&quot;)",
+				"classType": "tablinks",
+				"value": "Escalations Emails",
+				"response": ""
+			},
+			{
+				"name": "Chat",
+				"action": "NoterCategory.getLevel3Buttons(&quot;Emails&quot;, &quot;Chat&quot;)",
+				"classType": "tablinks",
+				"value": "Chat Emails",
+				"response": ""
+			}
+		]
+	},
+	{
+		"groupName": "MiscTools",
+		"subGroup": "Commercial Tools",
+		"subGroup2": "",
+		"type": "radioButton",
+		"buttons": [{
+				"name": "commercialSpeeds",
+				"action": "createTab()",
+				"classType": "tablinks",
+				"value": "Commerical Internet Plans",
+				"response": "<table class=&#39;table&#39;><tr><th>CSG</th><th>Plan</th><th>Speed</th><th>Price</th></tr><tr><td>8;</td><td>Burst</td><td></td><td>34.99</td></tr><tr><td>JH8</td><td>Bolt</td><td> 25mbps</td><td>29.99</td></tr><tr><td>JH9</td><td>Rush</td><td>75mbps</td><td>59.99</td></tr><tr><td>Jl1</td><td>Ultra</td><td>250mbps</td><td>69.99</td></tr><tr><td>OA1</td><td>Elite</td><td>500mbps</td><td>99.99<td></tr></table>"
+			},
+			{
+				"name": "commercialOrderType",
+				"action": "MiscTools.popitup(&quot;./miscTools/commercialOrderType.html&quot;)",
+				"classType": "tablinks",
+				"value": "Commercial Order Type",
+				"response": ""
+			}
+		]
+	},
+	{
+		"groupName": "MiscTools",
+		"subGroup": "Emails",
+		"subGroup2": "Escalations",
+		"buttons": [{
+				"name": "wliForm",
+				"action": "NewForm.buildForm(\"wliEmailForm\", \"MiscTools\")",
+				"classType": "tablinks",
+				"value": "WLI Email",
+				"response": ""
+			},
+			{
+				"name": "embarqPastDue",
+				"action": "NewForm.buildForm(\"neacEmailForm\", \"MiscTools\")",
+				"classType": "tablinks",
+				"value": "Embarq Order Past Due Email",
+				"response": ""
+			},
+			{
+				"name": "viasatPasswordReset",
+				"action": "NewForm.buildForm(\"viasatEmailForm\", \"MiscTools\")",
+				"classType": "tablinks",
+				"value": "ViaSat Password Reset",
+				"response": ""
+			},
+			{
+				"name": "viasatPasswordResetAgent",
+				"action": "NewForm.buildForm(\"viasatEmailFormAgent\", \"MiscTools\")",
+				"classType": "tablinks",
+				"value": "ViaSat Password Reset to Agent",
+				"response": ""
+			},
+
+			{
+				"name": "spidEmail",
+				"action": "NewForm.buildForm(\"spidEmailForm\", \"MiscTools\")",
+				"classType": "tablinks",
+				"value": "SPID Email",
+				"response": ""
+			},
+			{
+				"name": "UATEmail",
+				"action": "NewForm.buildForm(\"uatEmailForm\", \"MiscTools\")",
+				"classType": "tablinks",
+				"value": "UAT Email",
+				"response": ""
+			},
+			{
+				"name": "cboDefectEmail",
+				"action": "NewForm.buildForm(\"cboDefectEmailForm\", \"MiscTools\")",
+				"classType": "tablinks",
+				"value": "CBO Defect Email",
+				"response": ""
+			},
+			{
+				"name": "bbProjectEmail",
+				"action": "NewForm.buildForm(\"bbProjectEmailForm\", \"MiscTools\")",
+				"classType": "tablinks",
+				"value": "BB Project Email",
+				"response": ""
+			},
+			{
+				"name": "No RMA",
+				"action": "NewForm.buildForm(\"noRMAForm\", \"MiscTools\")",
+				"classType": "tablinks",
+				"value": "No RMA Email",
+				"response": ""
+			},
+			{
+				"name": "RAF Not in Master List",
+				"action": "NewForm.buildForm(\"RAFNotInMasterListForm\", \"MiscTools\")",
+				"classType": "tablinks",
+				"value": "RAF Not in Master List",
+				"response": ""
+			},
+			{
+				"name": "RAF Confirm Receipt",
+				"action": "NewForm.buildForm(\"RAFConfirmReceiptForm\", \"MiscTools\")",
+				"classType": "tablinks",
+				"value": "RAF Confirm Receipt",
+				"response": ""
+			},
+			{
+				"name": "RAF New TV Request",
+				"action": "NewForm.buildForm(\"RAFNewTVRequestForm\", \"MiscTools\")",
+				"classType": "tablinks",
+				"value": "RAF New TV Request",
+				"response": ""
+			},
+			{
+				"name": "RAF Order Cancelled",
+				"action": "NewForm.buildForm(\"RAFOrderCancelledForm\", \"MiscTools\")",
+				"classType": "tablinks",
+				"value": "RAF Order Cancelled",
+				"response": ""
+			},
+			{
+				"name": "AmdocsBusinessCareEmail",
+				"action": "NewForm.buildForm(\"amdocsBusinessCareForm\", \"MiscTools\")",
+				"classType": "tablinks",
+				"value": "Unable to Make Amdocs Businesscare Account",
+				"response": ""
+			},
+			{
+				"name": "testingFrom",
+				"action": "MiscTools.testingForm()",
+				"classType": "tablinks",
+				"value": "Testing Form",
+				"response": ""
+			}
+		]
+	},
+	{
+		"groupName": "MiscTools",
+		"subGroup": "Emails",
+		"subGroup2": "Chat",
+		"buttons": [{
+				"name": "likeForNonLike",
+				"action": "NewForm.buildForm(\"likeForNonLikeEmailForm\", \"MiscTools\")",
+				"classType": "tablinks",
+				"value": "Like for Non-Like",
+				"response": ""
+			},
+			{
+				"name": "remoteReturnedToSender",
+				"action": "NewForm.buildForm(\"remoteReturnedToSenderForm\", \"MiscTools\")",
+				"classType": "tablinks",
+				"value": "54.0 Remote Returned To Sender",
+				"response": ""
+			},
+			{
+				"name": "ReturnForCredit",
+				"action": "NewForm.buildForm(\"returnForCreditForm\", \"MiscTools\")",
+				"classType": "tablinks",
+				"value": "Return For Credit Email",
+				"response": ""
+			},
+			{
+				"name": "ReturnForExchange",
+				"action": "NewForm.buildForm(\"returnForExchangeForm\", \"MiscTools\")",
+				"classType": "tablinks",
+				"value": "Return For Exchange Email",
+				"response": ""
+			}
+		]
+	},
+	{
+		"groupName": "MiscTools",
+		"subGroup": "DNW Tools",
+		"subGroup2": "Templates",
+		"buttons": [{
+				"name": "moveGFR",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Move Internet Only",
+				"response": "MOVE GFR"
+			},
+			{
+				"name": "move1FR",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Move Phone + Internet 1FR",
+				"response": "MOVE 1FR PH"
+			},
+			{
+				"name": "moveUHR",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Move Phone + Internet UHR",
+				"response": "MOVE UHR PH"
+			},
+			{
+				"name": "uhrGFR",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Drop Phone Keep DSL UHR",
+				"response": "UHR>GFR"
+			},
+			{
+				"name": "1frGFR",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Drop Phone Keep DSL 1FR",
+				"response": "1FR>GFR"
+			},
+			{
+				"name": "gfr1FR",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Add Phone",
+				"response": "GFR>1FR"
+			},
+			{
+				"name": "portPhone",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Port Phone",
+				"response": "COM PHONE"
+			},
+			{
+				"name": "comDSL",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Convert DSL",
+				"response": "COM DSL"
+			}
+		]
+	},
+	{
+		"groupName": "MiscTools",
+		"subGroup": "Dish Fiber",
+		"subGroup2": "",
+		"type": "radioButton",
+		"buttons": [{
+				"name": "macAddressLookup",
+				"action": "macAddressLookup.buildForm()",
+				"classType": "tablinks",
+				"value": "MAC Address Lookup",
+				"response": ""
+			},
+			{
+				"name": "Nomadix",
+				"action": "MiscTools.popitup(&quot;http://172.98.130.118&quot;)",
+				"classType": "tablinks",
+				"value": "Nomadix",
+				"response": "Username: DishOperator <br /> CBISOperations2018"
+			},
+			{
+				"name": "dishFiberErrors",
+				"action": "DishFiber.build()",
+				"classType": "tablinks",
+				"value": "Dish Fiber Errors",
+				"response": ""
+			},
+			{
+				"name": "removews",
+				"action": "NewForm.buildForm(\"removeWhiteSpaceForm\", \"MiscTools\")",
+				"classType": "tablinks",
+				"value": "Remove White Space",
+				"response": ""
+			}
+		]
+	},
+	{
+		"groupName": "MiscTools",
+		"subGroup": "Coach Overrides",
+		"subGroup2": "",
+		"type": "radioButton",
+		"buttons": [{
+				"name": "firstMonthBill",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Minimum payment - First Month Bill (ctrl+shift+y)",
+				"response": "L1verp00lv"
+			},
+			{
+				"name": "piaExisting",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Minimum payment PIA Existing Old",
+				"response": "Av3ngers"
+			},
+			{
+				"name": "postPayExisting",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Minimum payment - PostPay Existing(ctrl+shift+y)",
+				"response": "Gu@rdians"
+			},
+			{
+				"name": "minimumPaymentPIA",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Minimum payment PIA (ctrl+shift+m)",
+				"response": "B1zm@rk13"
+			},
+			{
+				"name": "commercial",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Commercial (ctrl+shift+c)",
+				"response": "CCPass1"
+			},
+			{
+				"name": "promiseToPay",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "Promise to Pay Override (ctrl+shift+t)",
+				"response": "PublicEn3my"
+			},
+			{
+				"name": "ppvLimit",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "PPV Limit (ctrl+shift+l)",
+				"response": "UUDDLRLRBA$"
+			},
+			{
+				"name": "ppvPayment",
+				"action": "copyit()",
+				"classType": "copy",
+				"value": "PPV Payment (ctrl+shift+w)",
+				"response": "Be@stieBoys"
+			}
+		]
+	},
+	{
+		"groupName": "MiscTools",
+		"subGroup": "CSG Orders",
+		"subGroup2": "",
+		"type": "radioButton",
+		"buttons": [{
+				"name": "gen5manualOrder",
+				"action": "createTab()",
+				"classType": "tablinks",
+				"value": "Gen 5 Manual Order",
+				"response": "<table class=&#39;table&#39;><tr><th>CSG</th><th>Description</th></tr><tr><td>9:</td><td>Set Up Cable</td></tr><tr><td> AX7</td><td>Setup BB Dish</td></tr><tr><td> 89</td><td>Set Up Tria</td></tr><tr><td> 95</td><td>Setupmodem</td></tr><tr><td> P2</td><td>Appointment</td></tr><tr><td> 5U</td><td>Existing Customer</td></tr><tr><td> NI</td><td>Educate Customer</td></tr><tr><td> 96</td><td>Survey Site</td></tr><tr><td> 60 </td><td>Instl Int</td></tr><tr><td> MG6 </td><td>MG6</td></tr><tr><td> <strong>If conus:</strong><br/> MG7 <br/><strong> If Alaska: </strong><br/> MG8</td><td><br/> Hughes Gen 5 Tria<br/><br/>Hughes Gen 5 Tria AK</td></tr><tr><td> MG9</td><td>Hughes Gen 5 Dish</td></tr><tr><td> MH1</td><td>Setup Jupiter</tr><tr><td>MH3</td><td>Hughes Cust</td></tr><tr><td><strong>If upgrade:</strong> <br/> G1</td><td><br/>Waive Dishnet ETF</td></tr><tr><td><strong>If Pole mount:</strong><br/> R=</td><td><br/>Pole mount</td></tr><tr><td><strong>Select Plan:</strong><br/>MH7<br/>AJ8<br/>AJ9<br/>MI1<br/></td><td><br/>10 GB<br/> 20 GB</br> 30 GB <br/> 50GB<br/></td></tr><tr><td><strong>If Express Repair:</strong><br/> LN1<br/>LN2</td><td><br/>Express Repair Basic<br/>Express Repair Premium</td></tr><tr><td><strong>If VOIP:</strong><br/>LI7<br/>LI8<br/>LO1</td><td><br/>Home Voice ATA<br/>Install Home Voice<br/>Hughesnet Voice Commitment<br/></td></tr></table>"
+			},
+			{
+				"name": "v2manualOrder",
+				"action": "createTab()",
+				"classType": "tablinks",
+				"value": "Viasat 2 Manual Order",
+				"response": "<table class=&#39;table&#39;><tr><th>CSG</th><th>Description</th></tr><tr><td>9:</td><td>Set Up Cable</td></tr><tr><td> 89</td><td>Set Up Tria</td></tr><tr><td> 95</td><td>Setupmodem</td></tr><tr><td> P2</td><td>Appointment</td></tr><tr><td> 5U</td><td>Existing Customer</td></tr><tr><td> NI</td><td>Educate Customer</td></tr><tr><td> 96</td><td>Survey Site</td></tr><tr><td> 60 </td><td>Instl Int</td></tr><tr><td> LV7 </td><td>Set Up Dish ViaSat</td></tr><tr><td> LV8 </td><td>Dish ViaSat</td></tr><tr><td> LS9 </td><td>Viasat Customer</td></tr><tr><td> KQ6 </td><td>Set up Orb 69.9 Viasat 2</td></tr><tr><td> KQ5 </td><td>Modem ViaSat Wifi Gateway</td></tr><tr><td> KQ4 </td><td>Tria ViaSat pTria</td></tr><tr><td> KQ3 </td><td>Monthly Leased Modem</td></tr><tr><td> LV1 </td><td>Standard Install (reg. $99.99)</td></tr></table><h3>Viasat 2 Plans</h3><table class=&#39;table&#39;><tr><th>Plan</th><th>Speed</th><th>CSG Code</th></tr><tr><td>Bronze</td><td>12</td><td>KQ7</td></tr><tr><td>Silver</td><td>25</td><td>KQ8</td></tr><tr><td>Gold</td><td>50</td><td>KQ9</td></tr></table>"
+			},
+			{
+				"name": "gen5TC",
+				"action": "createTab()",
+				"classType": "tablinks",
+				"value": "Gen 5 Trouble Call",
+				"response": "Verify the FSO in DWAY then build a new order with the following codes.<h3> Tags Needed for Non-Sub activation</h3><p>Use RS for Reason and NOR for campaign </p><br/><table class=&#39;table&#39;><tr><th>CSG</th><th>Description</th></tr><tr><td>F( </td><td> Activation (needed to restart non-sub account)</td></tr><tr><td> XW </td><td> Advance Pay (non sub)</td></tr></table><h3>Gen 5 Trouble Call Tags</h3><table class=&#39;table&#39;><tr><th>CSG</th><th>Description</th></tr><tr><td> P2 </td><td>Appointment</td></tr><tr><td> NI </td><td>Educate Customer </td></tr><tr><td> 96 </td><td>Survey Site</td></tr><tr><td> #. </td><td> Truck Roll Waived (Trkrollwvd)</td></tr><tr><td> KT9 </td><td> Hughes OVT Fail (Hghesovtfail) </td></tr></table>"
+			},
+			{
+				"name": "viasatOrder",
+				"action": "createTab()",
+				"classType": "tablinks",
+				"value": "ViaSat Order",
+				"response": "<table class=&#39;table&#39;><tr><th>CSG</th></tr><tr><td>60</td></tr><tr><td> b1</td></tr><tr><td> b=</td></tr><tr><td> package code </td></tr><tr><td> #M</td></tr><tr><td> 89</td></tr><tr><td> 9:</td></tr></table>"
+			},
+			{
+				"name": "commercialAcctTags",
+				"action": "createTab()",
+				"classType": "tablinks",
+				"value": "Commercial Account CSG Tags",
+				"response": "<table class=&#39;table&#39;><tr><th>CSG</th><th>Description</th></tr><tr><td>L3 </td><td> communities activation</td></tr><tr><td> ;= </td><td> autopay </td></tr><tr><td> FC1 </td><td> sds </td></tr><tr><td> 8; </td><td>  burst </td></tr><tr><td> QG </td><td>  direct </td></tr><tr><td> CP9 </td><td>  ebill</td></tr></table>"
+			},
+			{
+				"name": "troubleCall",
+				"action": "createTab()",
+				"classType": "tablinks",
+				"value": "Video Trouble Call",
+				"response": "<table class=&#39;table&#39;><tr><th>CSG</th><th>Description</th></tr><tr><td>P2</td><td>Appointment</td></tr><tr><td>;$<br/>~R</td><td>Troubleshoot Video</br> Troubleshoot DNS</td></tr><tr><td>5U</td><td>Existing Customer</td></tr><tr><td> NI</td><td>Educate Customer</td></tr><tr><td>96</td><td>Survey Site</td></tr><tr><td>#.<br />(5<br />1K</td><td> Free Tech Visit<br/>$10 Tech Visit<br />$95 Tech Visit</td></tr></table>"
+			},
+			{
+				"name": "catastrophicEventWO",
+				"action": "createTab()",
+				"classType": "tablinks",
+				"value": "Catastrophic Event Work Order",
+				"response": "<table class=&#39;table&#39;><tr><th>CSG</th><th>Description</th></tr><tr><td>P2</td><td>Appointment</td></tr><tr><td>5U</td><td>Existing Customer</td></tr><tr><td> NI</td><td>Educate Customer</td></tr><tr><td>96</td><td>Survey Site</td></tr><tr><td>KV3</td><td>Catastrophic Event</td></tr><tr><td>B(</td><td>Bypass Dish Config Event</td></tr><tr><td>#.</td><td>Free Tech Visit</td></tr></table>"
+			},
+			{
+				"name": "customerCareWorkOrder",
+				"action": "createTab()",
+				"classType": "tablinks",
+				"value": "Customer Care Work Order",
+				"response": "<table class=&#39;table&#39;><tr><th>CSG</th><th>Description</th></tr><tr><td>P2</td><td>Appointment</td></tr><tr><td>5U</td><td>Existing Customer</td></tr><tr><td>KX9</td><td>Tech Portal Customer Care</td></tr><tr><td> NI</td><td>Educate Customer</td></tr><tr><td>96</td><td>Survey Site</td></tr><tr><td>#.</td><td> Free Tech Visit</td></tr></table>"
+			},
+			{
+				"name": "CSG Code Lookup",
+				"action": "MiscTools.popitup(\"http://mer1-b2bcmd1:2524/index.html\")",
+				"classType": "tablinks",
+				"value": "CSG Code Lookup",
+				"response": ""
+			}
+		]
+	},
+	{
+		"groupName": "MiscTools",
+		"subGroup": "Parsers",
+		"subGroup2": "",
+		"type": "radioButton",
+		"buttons": [{
+				"name": "communityParser",
+				"action": "MiscTools.popitup(&quot;./miscTools/communityParser.html&quot;)",
+				"classType": "copy",
+				"value": "Property Search Community Parser",
+				"response": ""
+			},
+			{
+				"name": "ertNote",
+				"action": "NewForm.buildForm(\"ertQueryForm\", \"MiscTools\")",
+				"classType": "tablinks",
+				"value": "Create ERT Query Note",
+				"response": ""
+			},
+			{
+				"name": "jabberParser",
+				"action": "MiscTools.popitup(&quot;./miscTools/jabberParser.html&quot;)",
+				"classType": "copy",
+				"value": "Jabber Chat Log Parser",
+				"response": ""
+			},
+			{
+				"name": "getParser",
+				"action": "MiscTools.popitup(&quot;./miscTools/getLogParser.html&quot;)",
+				"classType": "copy",
+				"value": "GET Chat Log Parser",
+				"response": ""
+			}
+		]
+	},
+	{
+		"groupName": "MiscTools",
+		"subGroup": "Button Builder",
+		"subGroup2": "",
+		"type": "radioButton",
+		"buttons": [{
+				"name": "buttonBuilder",
+				"action": "NewForm.buildForm(\"buttonBuilderForm\", \"MiscTools\")",
+				"classType": "copy",
+				"value": "Build Buttons.json",
+				"response": ""
+			},
+			{
+				"name": "cssBuilder",
+				"action": "NewForm.buildForm(\"cssBuilderForm\", \"MiscTools\")",
+				"classType": "copy",
+				"value": "CSS Builder",
+				"response": ""
+			}
+		]
+	},
+	{
+		"groupName": "Problems",
+		"subGroup": "",
+		"subGroup2": "",
+		"type": "searchBox",
+		"buttons": [{
+				"name": "problem",
+				"action": "Problem.create()",
+				"classType": "tablinks",
+				"value": "problem",
+				"response": ""
+			}
+		]
+	},
+	{
+		"groupName": "Problem Examples",
+		"subGroup": "",
+		"subGroup2": "",
+		"type": "searchBox",
+		"buttons": [{
+				"name": "ProblemExamples",
+				"action": "ProblemExamples.create()",
+				"classType": "tablinks",
+				"value": "Problem Examples",
+				"response": ""
+			}
+		]
+	},
+	{
+		"groupName": "IMA Flows",
+		"subGroup": "",
+		"subGroup2": "",
+		"type": "searchBox",
+		"buttons": [{
+				"name": "problem",
+				"action": "autoComplete.createIMA()",
+				"classType": "tablinks",
+				"value": "problem",
+				"response": ""
+			}
+		]
+	},
+]

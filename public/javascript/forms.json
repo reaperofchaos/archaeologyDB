@@ -1,0 +1,248 @@
+var formList = [{
+		"name": "articleForm",
+		"srcType": "a", 
+		"variables": [
+			["frmTitle"],
+			["frmAuthors"],
+			["frmYear"],
+			["frmJournal",
+			"frmVolume",
+			"frmIssue"],
+			["frmSrcLocation"]
+		],
+		"functionName": "insertSource",
+		"displayName": "Add Article",
+		"colTotal": "1",
+		"preview":false
+	},
+	{
+		"name": "abstractForm",
+		"srcType": "ab", 
+		"variables": [
+			["frmTitle"],
+			["frmAuthors"],
+			["frmYear"],
+			["frmJournal",
+			"frmVolume",
+			"frmIssue"],
+			["frmSrcLocation"]
+		],
+		"functionName": "addAbstract",
+		"displayName": "Add Abstract",
+		"colTotal": "1",
+		"preview":false
+	},
+	{
+		"name": "bookForm",
+		"srcType": "b", 
+		"variables": [
+			["frmTitle"],
+			["frmAuthors"],
+			["frmEditors"],
+			["frmYear",
+			"frmPublisher",
+			"frmLocation"],
+			["frmSrcLocation"]
+		],
+		"functionName": "insertSource",
+		"displayName": "Add Book",
+		"colTotal": "1",
+		"preview":false
+	},
+	{
+		"name": "dissertationForm",
+		"srcType": "d", 
+		"variables": [
+			["frmTitle"],
+			["frmAuthors"],
+			["frmSupervisors"],
+			["frmLevel"],
+			["frmYear"],
+			["frmLocation"],
+			["frmSrcLocation"]
+		],
+		"functionName": "addDissertation",
+		"displayName": "Add PHD Dissertation",
+		"colTotal": "1",
+		"preview":false
+	},
+	{
+		"name": "thesisForm",
+		"srcType": "t", 
+		"variables": [
+			["frmTitle"],
+			["frmAuthors"],
+			["frmSupervisors"],
+			["frmLevel"],
+			["frmYear"],
+			["frmLocation"],
+			["frmSrcLocation"]
+		],
+		"functionName": "addThesis",
+		"displayName": "Add Thesis",
+		"colTotal": "1",
+		"preview":false
+	},	
+	{
+		"name": "posterForm",
+		"srcType": "po", 
+		"variables": [
+			["frmTitle"],
+			["frmPresenters"],
+			["frmDate"],
+			["frmLocation",
+			"frmConference"],
+			["frmWebsite"],
+			["frmSrcLocation"]
+		],
+		"functionName": "addPoster",
+		"displayName": "Add Poster",
+		"colTotal": "1",
+		"preview":false
+	},
+	{
+		"name": "presentationForm",
+		"srcType": "pr", 
+		"variables": [
+			["frmTitle"],
+			["frmPresenters"],
+			["frmDate"],
+			["frmLocation",
+			"frmConference"],
+			["frmWebsite"],
+			["frmSrcLocation"]
+		],
+		"functionName": "insertSource",
+		"displayName": "Add Presentation",
+		"colTotal": "1",
+		"preview":false
+	},
+	{
+		"name": "radioPresentationForm",
+		"srcType": "r", 
+		"variables": [
+			["frmTitle"],
+			["frmPresenters"],
+			["frmDate"],
+			["frmLocation",
+			"frmConference"],
+			["frmWebsite"],
+			["frmSrcLocation"]
+		],
+		"functionName": "addRadioPresentation",
+		"displayName": "Add Radio Presentation",
+		"colTotal": "1",
+		"preview":false
+	},
+	{
+		"name": "videoForm",
+		"srcType": "v", 
+		"variables": [
+			["frmTitle"],
+			["frmCreators"],
+			["frmUploaders"],
+			["frmDate"],
+			["frmPublisher"],
+			["frmWebsite"],
+			["frmSrcLocation"]
+		],
+		"functionName": "addVideo",
+		"displayName": "Add Video",
+		"colTotal": "1",
+		"preview":false
+	},
+	{
+		"name": "websiteForm",
+		"srcType": "w", 
+		"variables": [
+			["frmTitle"],
+			["frmWebmasters"],
+			["frmPublisher"],
+			["frmDate"],
+			["frmWebsite"],
+			["frmSrcLocation"]
+		],
+		"functionName": "addWebsite",
+		"displayName": "Add Website",
+		"colTotal": "1",
+		"preview":false
+	},
+	{
+		"name": "artifactForm",
+		"variables": [
+			"frmSiteId",
+			"frmSiteName",
+			"frmTimePeriod",
+			"frmArtifactClass",
+			"frmArtifact",
+			"frmQuantity",
+			"frmSrcType",
+			"frmSrcId"
+		],
+		"functionName": "addArtifact",
+		"displayName": "Add Artifact",
+		"colTotal": "1",
+		"preview":false
+	},
+	{
+		"name": "plantForm",
+		"variables": [
+			"frmSiteId",
+			"frmSiteName",
+			"frmPlantName",
+			"frmQuantity",
+			"frmSrcType",
+			"frmSrcId"
+		],
+		"functionName": "addPlant",
+		"displayName": "Add Plant",
+		"colTotal": "1",
+		"preview":false
+	},
+	{
+		"name": "radioCarbonDateForm",
+		"variables": [
+			"frmLabNo",
+			"frmArtifactId",
+			"frmRadioCarbonDate",
+			"frmStandardError",
+			"frmSiteId",
+			"frmSiteName",
+			"frmMaterial",
+			"frmContext",
+			"frmCollectedBy",
+			"frmSubmittedBy",
+			"frmSrcType",
+			"frmSrcId",
+			"frmArticleTitle",
+			"frmArticleCitation",
+			"frmIndirectSrc"
+		],
+		"functionName": "addRadioCarbonDate",
+		"displayName": "Add Radiocarbon Date",
+		"colTotal": "2",
+		"preview":false
+	},
+	{
+		"name": "stableIsotopeForm",
+		"variables": [
+			"frmSiteId",
+			"frmSiteName",
+			"frmTimePeriod",
+			"frmSampleId",
+			"frmSpecies",
+			"frmElement",
+			"frmAge",
+			"frmSex",
+			"frmC13",
+			"frmN15",
+			"frmSrcType",
+			"frmSrcId",
+			"frmIndirectSrc"
+		],
+		"functionName": "addStableIsotope",
+		"displayName": "Add Stable Isotope",
+		"colTotal": "1",
+		"preview":false
+	}
+];

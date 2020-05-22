@@ -1,0 +1,45 @@
+form .form-group{
+   width: 700px;
+   max-width: 100%;
+   border-radius: 0 !important;
+}
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+.ui-autocomplete {
+    max-height: 300px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+}
+* html .ui-autocomplete {
+    height: 300px;
+}
+
+.ui-autocomplete .ui-menu-item-wrapper {
+    font-size: 15px;
+    border-radius: 0;
+    border-bottom: solid #eceff1 2px;
+    padding: 10px;
+    color: #000;
+    background: #f9f9f9;
+}
+.ui-autocomplete .ui-menu-item {
+    color: #000;
+    background: #f9f9f9;
+}
+
+.ui-autocomplete .ui-menu-item:hover, .ui-menu-item-wrapper:hover {
+    color: #fff;
+    background: #a8a9d0;
+}
+
+.ui-menu .ui-state-focus,
+.ui-menu .ui-state-active {
+ color: #fff;
+    background: #967cfc;
+    background: #a8a9d0;
+    border: 0;
+}
