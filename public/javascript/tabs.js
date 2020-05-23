@@ -265,7 +265,6 @@
 					  });
 				});
 				$(document.body).on('click', '#getSources' ,function(){
-					//console.log('clicked')
 					var tabName = "sourceList";
 					var displayName = 'Sources';
 					var location = "main";
@@ -279,7 +278,6 @@
 						  });
 					});
 					$(document.body).on('click', '#getSiteList' ,function(){
-						console.log('clicked')	
 						var tabName = "siteList";
 						var displayName = 'Sites';
 						var location = "main";
@@ -633,11 +631,22 @@
 		}
 		  function createTab(tabName, displayName, value='', locations){
 				var myDivMenu = locations+"Menu";
-			 if(!document.getElementById(tabName)){
-				$("#"+myDivMenu).append("<li class='nav-item'><a data-toggle='tab' class='nav-link' href='#" + tabName + "'>"+displayName+"</a><span>x</span></li>");
+				var liId = tabName + "Nav"
+				console.log(`liID is ${liId}`);
+				var menuItems = document.getElementById(myDivMenu).getElementsByTagName("li");
+				var exists = false;
+				for (var i = 0; i < menuItems.length; i++) {
+					if(menuItems[i].id == liId)
+					{	
+						exists = true;
+						break;
+					}
+				}
+			if(!document.getElementById(tabName) && !exists){
+				$("#"+myDivMenu).append("<li class='nav-item' id='"+ liId + "'><a data-toggle='tab' class='nav-link' href='#" + tabName + "'>"+displayName+"</a><span>x</span></li>");
 				$("#"+locations).append("<div class='tab-pane' id='" + tabName + "'>" + value +"</div>");
 			 }
-			 $("#"+myDivMenu +" a:last").tab('show');
+			 $("#"+myDivMenu +" a[href='#"+ tabName + "']").tab('show');
 		  }
 		  function createTab2(tabName, displayName, value='', locations){
 			console.log(`Trying to create tab ${tabName}`);

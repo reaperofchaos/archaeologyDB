@@ -1,5 +1,5 @@
 <?php     
-require_once('../../private/initialize.php');
+    require_once(dirname(__FILE__)."/../../private/initialize.php'");
 $id = $_POST['id'];
 ?>
         <!-- Source Selector -->

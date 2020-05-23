@@ -1,5 +1,5 @@
 <?php
-    require_once('../private/initialize.php');
+    require_once(dirname(__FILE__)."/../private/initialize.php");
     isset($_POST['ID']) ? $id = $_POST['ID'] : $id = ""; 
     $n = preg_replace('/(?<!\ )[A-Z]/', ' $0', $id);
     $name = trim($n);

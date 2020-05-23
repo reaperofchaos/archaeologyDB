@@ -8,13 +8,13 @@
 set_error_handler("exception_error_handler");
 try
 {
-    include_once('./../private/initialize.php');
+    include_once(dirname(__FILE__)."/./../private/initialize.php");
 }
 catch(ErrorException $ex)
 {
     try
     {
-        include_once('./../../private/initialize.php');
+        include_once(dirname(__FILE__)."/./../../private/initialize.php");
     }
     catch(ErrorException $e){
         echo "Unable to include initialization file <br />"; 
@@ -56,13 +56,13 @@ echo "<!-- Author tab with author records -->
                 <!-- end author list div -->";
                 try
                 {
-                    include_once('./../private/shared/paginationAuthors.php');
+                    include_once(dirname(__FILE__)."/./../private/shared/paginationAuthors.php");
                 }
                 catch(ErrorException $ex)
                 {
                     try
                     {
-                        include_once('./../../private/shared/paginationAuthors.php');
+                        include_once(dirname(__FILE__)."/./../../private/shared/paginationAuthors.php");
                     }
                     catch(ErrorException $e){
                         echo "Unable to include pagination"; 

@@ -1,6 +1,5 @@
 <?php
-$root = realpath($_SERVER["DOCUMENT_ROOT"]);
-require_once($root.'\jomon\private\initialize.php');
+require_once(dirname(__FILE__)."/../../private/initialize.php");
 
 $total = Site::countSites();
 	

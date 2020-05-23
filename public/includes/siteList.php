@@ -5,13 +5,13 @@
 set_error_handler("exception_error_handler");
 try
 {
-    include_once('./../private/initialize.php');
+    include_once(dirname(__FILE__)."/./../private/initialize.php");
 }
 catch(ErrorException $ex)
 {
     try
     {
-        include_once('./../../private/initialize.php');
+        include_once(dirname(__FILE__)."/./../../private/initialize.php");
     }
     catch(ErrorException $e){
         echo "Unable to include initialization file <br />"; 
@@ -53,13 +53,13 @@ echo "<!-- Site tab with site records -->
                 <!-- end site list div -->";
                 try
                 {
-                    include_once('./../private/shared/paginationSites.php');
+                    include_once(dirname(__FILE__)."/./../private/shared/paginationSites.php");
                 }
                 catch(ErrorException $ex)
                 {
                     try
                     {
-                        include_once('./../../private/shared/paginationSites.php');
+                        include_once(dirname(__FILE__)."/./../../private/shared/paginationSites.php");
                     }
                     catch(ErrorException $e){
                         echo "Unable to include pagination"; 

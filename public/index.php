@@ -1,5 +1,6 @@
-<?php require_once('../private/initialize.php'); ?>
-
+<?php 
+require_once(dirname(__FILE__)."/../private/initialize.php");
+?>
 <!-- Doctype HTML5 -->
 <!doctype html>
 <html lang ='en'>

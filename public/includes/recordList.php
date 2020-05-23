@@ -1,4 +1,6 @@
 <?php
+$path = getcwd();
+
 function exception_error_handler($errno, $errstr, $errfile, $errline ) {
     throw new ErrorException($errstr, $errno, 0, $errfile, $errline);
 }
@@ -7,13 +9,13 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 set_error_handler("exception_error_handler");
 try
 {
-    include_once('./../private/initialize.php');
+    include_once(dirname(__FILE__)."/./../private/initialize.php");
 }
 catch(ErrorException $ex)
 {
     try
     {
-        include_once('./../../private/initialize.php');
+        include_once(dirname(__FILE__)."/./../../private/initialize.php");
     }
     catch(ErrorException $e){
         echo "Unable to include initialization file <br />"; 
@@ -28,7 +30,8 @@ catch(ErrorException $ex)
 
 echo "<!-- home tab with source records -->
             <div id='sourceList' class='tab-pane fade in active' style='max-height: 500px;'>
-                <!-- Record buttons -->
+            ". $path . "<br />    
+            <!-- Record buttons -->
                 <div id='mainButtonList'>
                         <table class='table'>
                             <tr>
@@ -72,13 +75,13 @@ echo "<!-- home tab with source records -->
                 <!-- end record list div -->";
                 try
                 {
-                    include_once('./../private/shared/pagination.php');
+                    include_once(dirname(__FILE__)."/./../private/shared/pagination.php");
                 }
                 catch(ErrorException $ex)
                 {
                     try
                     {
-                        include_once('./../../private/shared/pagination.php');
+                        include_once(dirname(__FILE__)."/./../../private/shared/pagination.php");
                     }
                     catch(ErrorException $e){
                         echo "Unable to include pagination"; 

@@ -2,7 +2,7 @@
     class StableIsotope {
         public $id;
         public $siteId;
-        public $site;
+        public $siteName;
         public $timePeriod;
         public $sampleId;
         public $species;
@@ -25,6 +25,7 @@
         public function __construct($args=[]) {
             $this->id = $args['id'] ?? '';
             $this->siteId = $args['siteId'] ?? '';
+            $this->siteName = $args['siteName'] ?? '';
             $this->timePeriod = $args['timePeriod'] ?? '';
             $this->sampleId = $args['sampleId'] ?? '';
             $this->species = $args['species'] ?? '';
@@ -83,9 +84,11 @@
             //echo $srcType . "<br />" . $srcId;
             $query = "SELECT * ";
             $query .= " FROM stable_isotopes";
-            $query .= " WHERE srcId='" . $srcId . "'";
-            $query .= " AND srcType='" . $srcType . "'";
-            $query .= " ORDER by site ASC";
+            $query .= " INNER JOIN jomon_sites";
+            $query .= " ON jomon_sites.siteId = stable_isotopes.siteId";
+            $query .= " WHERE stable_isotopes.srcId='" . $srcId . "'";
+            $query .= " AND stable_isotopes.srcType='" . $srcType . "'";
+            $query .= " ORDER by jomon_sites.siteName ASC";
             $obj_array = self::find_by_sql($query);
             return $obj_array;
         }   

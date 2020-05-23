@@ -1,6 +1,6 @@
     <?php
     //Connect to Database
-    require_once('../../private/initialize.php');
+    require_once(dirname(__FILE__)."/../../private/initialize.php");
 
     isset($_POST['src_id']) ? $ID = $_POST['src_id'] : null; 
 

@@ -69,6 +69,8 @@
         static public function find_by_id($srcType, $srcId) {
             $query = "SELECT * ";
             $query .= " FROM plant";
+            $query .= " INNER JOIN jomon_sites";
+            $query .= " ON jomon_sites.siteId = plant.siteId";
             $query .= " WHERE srcId='" . $srcId . "'";
             $query .= " AND srcType='" . $srcType . "'";
             $query .= " ORDER by siteName ASC";
