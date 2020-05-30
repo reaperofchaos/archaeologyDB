@@ -1,18 +1,21 @@
 <?php
 echo "<!-- search box location -->
+<div id='updateResultsJSON'></div>
     <div class='searchBoxRow'>
         <!-- left column spacing -->
         <div class='col-sm-7'>
         </div>
         <!-- search box column sm-4 -->
         <div class='col-sm-4'>
-            <div class='searchArea' style='float: right; padding: 10px;'>
+           <div class='searchArea' style='float: right; padding: 10px;'>
                 <!-- searchbox buttons -->
                 <div class='btn-group'>
                     <button type='button' class='btn btn-primary' onclick='changeSearch(\"title\")'>Title</button>
                     <button type='button' class='btn btn-primary' onclick='changeSearch(\"author\")'>Author</button>
                     <button type='button' class='btn btn-primary' onclick='changeSearch(\"site\")'>Site</button>
+                    <img id='refresh' onclick='updateJSON()' src='icons/refresh.png' height='30' width='30' />
                 </div> 
+                <br/>
                 <!-- search box form -->
                 <div class='form-group' id='searchlist'>
                     <div id='searchArticles' style='display:block'>

@@ -283,9 +283,9 @@
 
         static public function insert($src, $query){
             $sourceTypeName = SourceCreator::getSourceType($src->srcType);
-            if(!$src->checkIfExists())
+            if($src->checkIfExists() != 1)
             {
-                echo "source does not exist <br />";
+                echo "Source does not exist. Inserting Source now <br />";
               try
               {
                   $result = self::$database->prepare($query);

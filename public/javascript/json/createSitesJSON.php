@@ -1,5 +1,5 @@
 <?php
-    require_once('../../../private/initialize.php');
+    require_once(dirname(__FILE__)."/../../../private/initialize.php");
     $response = array();
     $posts = array();
     $authors = Site::getAllSites();
@@ -8,6 +8,13 @@
         $response[] = array('site'=> $author);
     }
     $fp = fopen('sites.json', 'w');
-    fwrite($fp, json_encode($response));
+    if(fwrite($fp, json_encode($response)))
+    {
+        echo "1";
+    }
+    else
+    {
+        echo "0";
+    };
     fclose($fp);
 ?> 

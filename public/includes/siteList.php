@@ -24,9 +24,8 @@ echo "<!-- Site tab with site records -->
         <div id='siteList' class='tab-pane fade' style='max-height: 500px;'>
                 <!-- sitesList list -->
                 <div id='sitesList' style='height: 300px; overflow: scroll; width:800px;'>";
-                ?>    
-                    <!-- table for records -->`
-                    <?php  $i = 0; 
+                    //table for records
+                    $i = 0; 
                         $limit  = 50; //how many items to show per page
                         isset($_GET['sitePage']) ? $page = $_GET['sitePage'] : $page = 0;
                         $page != 0 ? $start = ($page - 1) * $limit : $start = 0;

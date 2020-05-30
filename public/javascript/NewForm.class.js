@@ -76,10 +76,16 @@ class NewForm
 						tab(){ createTab(formName(), displayName, html, location);
 						}
 					  }
+		var loc = window.location.pathname;
+		var dir = loc.substring(0, loc.lastIndexOf('/'));
+		console.log(`DIR is ${dir}`);
 		return results; 
 	 }
 	 // buttonGroup constructor(buttons, cols, id, classType)
 	 static buildForm(name, location){
+		var loc = window.location.pathname;
+		var dir = loc.substring(0, loc.lastIndexOf('/'));
+		console.log(`DIR is ${dir}`);
 		const IsName = formList => formList.name == name; 
 		var formsObject = formList.filter(IsName)
 								  .map((currentElement)=>{
@@ -115,6 +121,9 @@ class NewForm
 	 }
 	 
 	static buildFormDiv(name, location, id){
+		var loc = window.location.pathname;
+		var dir = loc.substring(0, loc.lastIndexOf('/'));
+		console.log(`DIR is ${dir}`);
 		var html;
 		const IsName = formList => formList.name == name; 
 		var formsObject = formList.filter(IsName)

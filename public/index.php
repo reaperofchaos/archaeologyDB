@@ -26,6 +26,7 @@ require_once(dirname(__FILE__)."/../private/initialize.php");
         <link rel='icon' type='image/png' href='includes/favicon.ico'>
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
         <link rel='stylesheet' href='css/styles.css?r=<?php echo $r; ?>'>
+        <link rel='stylesheet' href='css/animate.css'>
         <link rel='stylesheet' href='css/tabs.css'>
         <link rel="stylesheet" href="css/jomondbMenu.css">
         <link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css'>

@@ -264,6 +264,45 @@
 						createTab2(tabName, displayName, data, location);
 					  });
 				});
+				$(document.body).on('click', '#getSkeletons' ,function(){
+					var tabName = "skeletonList";
+					var displayName = 'Skeletons';
+					var location = "main";
+					var ID = 1; 
+					$.get("./includes/skeletonList.php",
+						  {
+							skeletonPage: ID
+						  },
+						  function(data, status){
+							createTab2(tabName, displayName, data, location);
+						  });
+					});
+					$(document.body).on('click', '#getFauna' ,function(){
+						var tabName = "faunaList";
+						var displayName = 'Fauna';
+						var location = "main";
+						var ID = 1; 
+						$.get("./includes/faunaList.php",
+							  {
+								faunaPage: ID
+							  },
+							  function(data, status){
+								createTab2(tabName, displayName, data, location);
+							  });
+						});
+						$(document.body).on('click', '#getPlants' ,function(){
+							var tabName = "plantList";
+							var displayName = 'Plants';
+							var location = "main";
+							var ID = 1; 
+							$.get("./includes/plantList.php",
+								  {
+									plantPage: ID
+								  },
+								  function(data, status){
+									createTab2(tabName, displayName, data, location);
+								  });
+							});
 				$(document.body).on('click', '#getSources' ,function(){
 					var tabName = "sourceList";
 					var displayName = 'Sources';
@@ -770,4 +809,57 @@
 				document.getElementById('searchAuthors').style.display='none';
 				document.getElementById('searchSites').style.display='none';
 			}
+		}
+		function postDatas(path, formId)
+		{
+			var form = document.getElementById(formId);
+			result = document.getElementById(formId+"_Result");
+			const Http = new XMLHttpRequest();
+			var kvpairs = [];
+			Http.open("POST", path);
+			Http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			for ( var i = 0; i < form.elements.length; i++ ) {
+				var e = form.elements[i];
+				kvpairs.push(encodeURIComponent(e.name) + "=" + encodeURIComponent(e.value));
+			 }
+			 var queryString = kvpairs.join("&");
+			console.log(queryString);
+			Http.send(queryString);
+
+			Http.onreadystatechange = (e) => {
+				result.innerHTML = Http.responseText;
+			}
+		}
+
+		function updateJSON(path)
+		{
+			var path = '../public/updateSearch.php';
+			document.getElementById('refresh').style.animationPlayState="running"; 
+			result = document.getElementById("updateResultsJSON");
+			
+			const Http = new XMLHttpRequest();
+			var kvpairs = [];
+			Http.open("POST", path);
+			Http.send();
+			var html = '';  
+			var errors = 0; 
+			Http.onreadystatechange = (e) => {
+			  console.log(Http.status);
+			  if(!Http.status == 200)
+			  {
+				errors++; 
+				html += `<div class="alert alert-danger alert-dismissible">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+				<strong>Unable to update Sources List</strong>     
+				</div>`;
+			  }
+			  
+			  result.innerHTML = html;
+			  document.getElementById('refresh').style.animationPlayState="paused";
+			}
+			html += `<div class="alert alert-success alert-dismissible">
+						<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+						<strong>Finished Updating</strong>     
+						</div>`;	
+			result.innerHTML += html;
 		}

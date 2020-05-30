@@ -8,30 +8,17 @@ echo "
                         <ul>
                             <li><a id='getSources'>List Sources</a>
                             <li><a id='getAuthors'>List Authors</a>
-                            <li><a id='getSiteList'>List Sites</a>
                         </ul>
                         </li>
                         <li><a href=\"#\">View Menu</a>
                         <ul>
-                            <li><a href=\"#\">List Sites</a>
-                            <ul>
-                                <li><a href=\"#\">View Map</a></li> 
-                                <li><a href=\"#\">View Layout</a></li> 
-                            </ul>
-                            </li>
-                            <li><a href=\"#\">View Skeletons</a>
-                            <ul>
-                                <li><a href=\"#\">View Profile</a></li> 
-                                <li><a href=\"#\">View Measurements</a></li> 
-                                <li><a href=\"#\">View Stable Isotopse</a></li> 
-                                <li><a href=\"#\">View Paleohealth</a></li> 
-                            </ul>
-                            </li>
+                            <li><a id='getSiteList'>List Sites</a></li>
+                            <li><a id='getSkeletons'>List Skeletons</a></li>                            </li>
                             <li><a href=\"#\">View Radiocarbon Dates</a></li> 
                             <li><a href=\"#\">View Enviroment</a>
                             <ul>
-                                <li><a href=\"#\">View Fauna</a></li> 
-                                <li><a href=\"#\">View Plants</a></li> 
+                                <li><a id='getFauna'>List Fauna</a></li>
+                                <li><a id='getPlants'>List Plants</a></li>
                                 <li><a href=\"#\">View Core Samples</a></li>
                             </ul>
                             </li> 

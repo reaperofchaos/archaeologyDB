@@ -1,5 +1,4 @@
 <?php
-
 function exception_error_handler($errno, $errstr, $errfile, $errline ) {
     throw new ErrorException($errstr, $errno, 0, $errfile, $errline);
 }
@@ -20,18 +19,15 @@ catch(ErrorException $ex)
         echo $e . "<br />";
     }
 }
-    
-//$root = realpath($_SERVER["DOCUMENT_ROOT"]);
-//echo $root . 'jomon\private\initialize.php';
 
 echo "<!-- home tab with source records -->
-            <div id='sourceList' class='tab-pane fade in active' style='max-height: 500px;'>    
+            <div id='plantList' class='tab-pane fade in active' style='max-height: 500px;'>    
             <!-- Record buttons -->
                 <div id='mainButtonList'>
                         <table class='table'>
                             <tr>
                                 <td>
-                                    <input type='button' class='addSource' value='Add Source' />
+                                    <input type='button' class='addFauna' value='Add Fauna' />
                                 </td>
                             </tr>
                         </table>
@@ -43,23 +39,23 @@ echo "<!-- home tab with source records -->
                     <!-- table for records -->`
                     <?php  $i = 0; 
                         $limit = 50; //how many items to show per page
-                        isset($_GET['page']) ? $page = $_GET['page'] : $page = 0;
+                        isset($_GET['plantPage']) ? $page = $_GET['plantPage'] : $page = 0;
                         $page != 0 ? $start = ($page - 1) * $limit : $start = 0;
-                        $sources = Source::find_all_sources_by_limit($start, $limit);
+                        $plants = Plant::find_all_plants_by_limit($start, $limit);
                         ?>
                         
-                    <?php foreach($sources as $source) {
+                    <?php foreach($plants as $plant) {
                         if($i == 0 || $i % 50 == 0){ 
                         echo" <div id='results_" . $i ."' style='display: block;'>
                                 <table class='table'> 
                                 <tr>
                                     <th></th>
-                                    <th>Record ID</th>
-                                    <th>Source ID</th>
-                                    <th>Source Name</th>
+                                    <th>Name</th>
+                                    <th>Genus</th>
+                                    <th>Specie</th>
                                 </tr>";
                         } 
-                        $source->displayRecord(); 
+                        $plant->displayRecord(); 
                         $i++;
                     } 
                     echo"
@@ -84,4 +80,5 @@ echo "<!-- home tab with source records -->
                 }
                 //include($root.'\jomon\private\shared\pagination.php');
             echo "</div>";
+?>
 ?>

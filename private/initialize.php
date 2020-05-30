@@ -56,5 +56,8 @@
   Bibliography::set_database($database);
   Author::set_database($database);
   Site::set_database($database);
+  Skeleton::set_database($database);
   Note::set_database($database);
+  Fauna::set_database($database);
+  Login::set_database($database);
 ?>

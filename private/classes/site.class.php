@@ -64,15 +64,15 @@
 
         static public function getAllSites(){
             $sites = [];
-            $query  = "SELECT site_name ";
+            $query  = "SELECT siteName ";
             $query .= "FROM jomon_sites ";
-            $query .= "ORDER BY site_name ASC";
+            $query .= "ORDER BY siteName ASC";
             try{
                 $result = self::$database->prepare($query);
                 $result->execute();
                 $result->setFetchMode(PDO::FETCH_ASSOC); 
                 while($record = $result->fetch()) {
-                    array_push($sites, $record['site_name']);
+                    array_push($sites, $record['siteName']);
                 }
             }
             catch(PDOException $e)

@@ -1,0 +1,396 @@
+[21-May-2020 15:35:24 America/Boise] PHP Warning:  require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/public/includes/recordList.php on line 4
+[21-May-2020 15:35:24 America/Boise] PHP Fatal error:  require_once(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/public/includes/recordList.php on line 4
+[21-May-2020 15:35:25 America/Boise] PHP Warning:  require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/public/includes/authorlist.php on line 4
+[21-May-2020 15:35:25 America/Boise] PHP Fatal error:  require_once(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/public/includes/authorlist.php on line 4
+[21-May-2020 15:35:26 America/Boise] PHP Warning:  require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/public/includes/siteList.php on line 3
+[21-May-2020 15:35:26 America/Boise] PHP Fatal error:  require_once(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/public/includes/siteList.php on line 3
+[22-May-2020 08:42:31 America/Boise] PHP Fatal error:  Uncaught Error: Class 'Source' not found in /home3/jacobco2/public_html/jomon/public/includes/recordList.php:29
+Stack trace:
+#0 {main}
+  thrown in /home3/jacobco2/public_html/jomon/public/includes/recordList.php on line 29
+[22-May-2020 08:42:34 America/Boise] PHP Warning:  require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/public/includes/authorlist.php on line 4
+[22-May-2020 08:42:34 America/Boise] PHP Fatal error:  require_once(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/public/includes/authorlist.php on line 4
+[22-May-2020 08:42:35 America/Boise] PHP Warning:  require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/public/includes/authorlist.php on line 4
+[22-May-2020 08:42:35 America/Boise] PHP Warning:  require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/public/includes/authorlist.php on line 4
+[22-May-2020 08:42:35 America/Boise] PHP Fatal error:  require_once(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/public/includes/authorlist.php on line 4
+[22-May-2020 08:42:35 America/Boise] PHP Fatal error:  require_once(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/public/includes/authorlist.php on line 4
+[22-May-2020 08:42:35 America/Boise] PHP Warning:  require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/public/includes/authorlist.php on line 4
+[22-May-2020 08:42:35 America/Boise] PHP Fatal error:  require_once(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/public/includes/authorlist.php on line 4
+[22-May-2020 08:42:35 America/Boise] PHP Warning:  require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/public/includes/authorlist.php on line 4
+[22-May-2020 08:42:35 America/Boise] PHP Fatal error:  require_once(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/public/includes/authorlist.php on line 4
+[22-May-2020 13:22:00 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/pagination.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/recordList.php(81): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:22:00 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:22:02 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/authorlist.php(65): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:22:02 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:22:03 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/authorlist.php(65): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:22:03 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:22:03 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/authorlist.php(65): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:22:03 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:22:08 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/authorlist.php(65): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:22:08 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:22:17 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/authorlist.php(65): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:22:17 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:22:18 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/authorlist.php(65): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:22:18 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:22:18 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/authorlist.php(65): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:22:18 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:22:26 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/siteList.php(62): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:22:26 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:22:39 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/pagination.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/recordList.php(81): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:22:39 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:22:46 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/authorlist.php(65): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:22:46 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:22:47 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/authorlist.php(65): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:22:47 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:22:47 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/authorlist.php(65): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:22:47 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:22:49 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/siteList.php(62): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:22:49 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:22:49 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/siteList.php(62): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:22:49 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:22:50 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/siteList.php(62): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:22:50 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:22:50 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/siteList.php(62): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:22:50 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:23:06 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/authorlist.php(65): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:23:06 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:23:07 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/siteList.php(62): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:23:07 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:25:11 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/authorlist.php(65): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:25:11 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:25:13 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/authorlist.php(65): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:25:13 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:25:13 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/authorlist.php(65): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:25:13 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:25:14 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/siteList.php(62): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:25:14 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/siteList.php(62): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:25:14 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:25:14 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:25:15 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/siteList.php(62): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:25:15 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:25:15 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/siteList.php(62): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:25:15 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:25:16 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/pagination.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/recordList.php(81): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:25:16 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:25:16 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/pagination.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/recordList.php(81): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:25:16 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:25:17 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/pagination.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/recordList.php(81): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:25:17 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:25:32 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/authorlist.php(65): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:25:32 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:36:02 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/pagination.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/recordList.php(81): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:36:02 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:36:09 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/siteList.php(62): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:36:09 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:36:11 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/siteList.php(62): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:36:11 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:36:11 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/siteList.php(62): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:36:11 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationSites.php on line 3
+[22-May-2020 13:37:38 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/pagination.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/recordList.php(81): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:37:38 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:37:42 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/pagination.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/recordList.php(81): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:37:42 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:37:48 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/pagination.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/recordList.php(81): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:37:48 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:37:48 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/pagination.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/recordList.php(81): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:37:48 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:37:49 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/pagination.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/recordList.php(81): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:37:49 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:37:49 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/pagination.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/recordList.php(81): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:37:49 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:47:17 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/authorlist.php(65): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:47:17 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:47:21 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/authorlist.php(65): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:47:21 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:47:21 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/authorlist.php(65): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:47:21 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 13:47:22 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/pagination.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/recordList.php(81): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:47:22 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:47:22 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/pagination.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/recordList.php(81): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 13:47:22 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 18:44:29 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/pagination.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/pagination.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/recordList.php(81): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 18:44:29 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/pagination.php on line 3
+[22-May-2020 18:44:30 America/Boise] PHP Warning:  Uncaught ErrorException: require_once(/home3/jacobco2/public_html\jomon\private\initialize.php): failed to open stream: No such file or directory in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php:3
+Stack trace:
+#0 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): exception_error_handler(2, 'require_once(/h...', '/home3/jacobco2...', 3, Array)
+#1 /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php(3): require_once()
+#2 /home3/jacobco2/public_html/jomon/public/includes/authorlist.php(65): include_once('/home3/jacobco2...')
+#3 {main}
+  thrown in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3
+[22-May-2020 18:44:30 America/Boise] PHP Fatal error:  main(): Failed opening required '/home3/jacobco2/public_html\jomon\private\initialize.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home3/jacobco2/public_html/jomon/private/shared/paginationAuthors.php on line 3

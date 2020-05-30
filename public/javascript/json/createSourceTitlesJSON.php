@@ -1,5 +1,5 @@
 <?php
-    require_once('../../../private/initialize.php');
+    require_once(dirname(__FILE__)."/../../../private/initialize.php");
     /*
     $response = array();
     $posts = array();
@@ -12,6 +12,13 @@
     */
     $response = Source::getAllTitlesAsJSON();
     $fp = fopen('sourceTitles.json', 'w');
-    fwrite($fp, $response);
+    if(fwrite($fp, json_encode($response)))
+    {
+        echo "1";
+    }
+    else
+    {
+        echo "0";
+    };
     fclose($fp);
 ?> 

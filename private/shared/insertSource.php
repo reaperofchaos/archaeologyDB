@@ -1,6 +1,5 @@
 <?php
-
-require_once(dirname(__FILE__)."/../../private/initialize.php'");
+require_once(dirname(__FILE__)."/../../private/initialize.php");
 
 	$args =[];
 	//Post variables 
@@ -177,7 +176,18 @@ require_once(dirname(__FILE__)."/../../private/initialize.php'");
                 //print_r(var_dump($presentation));
                 //echo "<br />";
             }
-            break;
+			break;
+			case "w":
+				$website = new website($args);
+				echo Website::create_citation($website) . "<br />";
+				Website::insertSource($website);
+				Website::insertWebMasters($website);
+				if($file){
+					Website::uploadFile($website, $file);
+					//print_r(var_dump($presentation));
+					//echo "<br />";
+				}
+			break;
 		default:
 	}
 	

@@ -27,7 +27,7 @@ var formList = [{
 			"frmIssue"],
 			["frmSrcLocation"]
 		],
-		"functionName": "addAbstract",
+		"functionName": "insertSource",
 		"displayName": "Add Abstract",
 		"colTotal": "1",
 		"preview":false
@@ -61,7 +61,7 @@ var formList = [{
 			["frmLocation"],
 			["frmSrcLocation"]
 		],
-		"functionName": "addDissertation",
+		"functionName": "insertSource",
 		"displayName": "Add PHD Dissertation",
 		"colTotal": "1",
 		"preview":false
@@ -78,7 +78,7 @@ var formList = [{
 			["frmLocation"],
 			["frmSrcLocation"]
 		],
-		"functionName": "addThesis",
+		"functionName": "insertSource",
 		"displayName": "Add Thesis",
 		"colTotal": "1",
 		"preview":false
@@ -95,7 +95,7 @@ var formList = [{
 			["frmWebsite"],
 			["frmSrcLocation"]
 		],
-		"functionName": "addPoster",
+		"functionName": "insertSource",
 		"displayName": "Add Poster",
 		"colTotal": "1",
 		"preview":false
@@ -129,7 +129,7 @@ var formList = [{
 			["frmWebsite"],
 			["frmSrcLocation"]
 		],
-		"functionName": "addRadioPresentation",
+		"functionName": "insertSource",
 		"displayName": "Add Radio Presentation",
 		"colTotal": "1",
 		"preview":false
@@ -146,7 +146,7 @@ var formList = [{
 			["frmWebsite"],
 			["frmSrcLocation"]
 		],
-		"functionName": "addVideo",
+		"functionName": "insertSource",
 		"displayName": "Add Video",
 		"colTotal": "1",
 		"preview":false
@@ -162,7 +162,7 @@ var formList = [{
 			["frmWebsite"],
 			["frmSrcLocation"]
 		],
-		"functionName": "addWebsite",
+		"functionName": "insertSource",
 		"displayName": "Add Website",
 		"colTotal": "1",
 		"preview":false
