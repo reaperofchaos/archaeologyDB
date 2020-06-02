@@ -1,5 +1,8 @@
   $(document).ready(function(){
-		  //create popup
+		createAuthorList();
+		createSiteList();
+		//createSourceList();
+		//create popup
 		  $(document.body).on('click', '.popup', function(){
 	      $(this).draggable().resizable();
 		  })
@@ -205,6 +208,53 @@
 					  console.log(err.message);
 					}
 					});
+			//login modal
+			$(document.body).on('click', '#loginSubmit', function(e){
+				e.preventDefault();	
+				var results = document.getElementById('loginResults');
+				console.log($('#loginForm').serialize());
+				try{
+					$.post("../public/login.php",
+						   $('#loginForm').serialize())
+						   .done(function(data, status){
+								$('#login').modal('hide');
+								updateLoginButtons(true);
+						   });	
+				} catch(err){
+				  console.log("Unable to do ajax for login.php");
+				  console.log(err.message);
+				}
+				});
+				$(document.body).on('click', '#registerSubmit', function(e){
+					e.preventDefault();	
+					try{
+						$.post("../public/register.php",
+							   $('#registerForm').serialize())
+							   .done(function(data, status){
+									$('#register').modal('hide');
+									$('#login').modal('show');
+									updateLoginButtons(false);
+							   });	
+					} catch(err){
+					  console.log("Unable to do ajax for register.php");
+					  console.log(err.message);
+					}
+					});
+				//logout modal
+			$(document.body).on('click', '#logoutSubmit', function(e){
+				e.preventDefault();	
+				try{
+					$.post("../public/logout.php",
+						   $('#logoutForm').serialize())
+						   .done(function(data, status){
+								$('#logout').modal('hide');
+								updateLoginButtons(false);
+						   });	
+				} catch(err){
+				  console.log("Unable to do ajax for logout.php");
+				  console.log(err.message);
+				}
+				});		
 			//create close button in popup
 			$(document.body).on('click', '.closePopup', function(){
 			  var id  = this.id;
@@ -862,4 +912,20 @@
 						<strong>Finished Updating</strong>     
 						</div>`;	
 			result.innerHTML += html;
+		}
+		function updateLoginButtons(loggedIn)
+		{
+			var loginButtons = document.getElementById('loginButtons');
+			var html = ''; 
+			if(loggedIn)
+			{
+				
+				html += `<button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#logout'>Logout</button>`; 
+			}
+			else
+			{
+				html += `<button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#login'>Login</button>
+						<button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#register'>Register</button>`;
+			}
+			loginButtons.innerHTML = html; 
 		}

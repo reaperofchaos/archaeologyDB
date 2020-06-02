@@ -14,7 +14,6 @@
         setcookie('PHPSESSID', '', time()-3600, '/', '', 0, 0);
     }
 
-    $page_title = 'Logged Out!';
     echo "<h1>Logged Out!</h1>
     <p>You are now logged out!</p>";
 ?>

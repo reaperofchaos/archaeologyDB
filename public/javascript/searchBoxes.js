@@ -31,7 +31,7 @@ function createSourceList()
                var html = "";
                myArr.map((curr)=>
                {
-                   html += `<option value='${curr.srcType}-${curr.srcID}'>
+                html += `<option value='${curr.srcType}-${curr.srcID}'>
                                ${curr.title}
                            </option>`;
                });
@@ -41,6 +41,7 @@ function createSourceList()
        sourceJson.open("GET", "javascript/json/sourceTitles.json", true);
        sourceJson.send();
 }
+
 function createSiteList()
 {
          //sites searchbox
@@ -60,8 +61,3 @@ function createSiteList()
          sitesJson.open("GET", "javascript/json/sites.json", true);
          sitesJson.send();
 }
-$(document).ready(function(){
-    createAuthorList();
-    createSiteList();
-    createSourceList();
-});

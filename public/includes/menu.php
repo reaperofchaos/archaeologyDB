@@ -36,9 +36,22 @@ echo "
                             <ul>
                                 <li><a href=\"http://resume.jacobconner.net\">About Me</a></li> 
                             </ul>
-                        </li> 
+                        </li>
+                        <li id='loginButtons'>";
+                        session_start();
+                        if(!$_SESSION)
+                        {
+                            echo "<button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#login'>Login</button>";
+                            echo "<button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#register'>Register</button>"; 
+                        }
+                        else
+                        {
+                            echo "<button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#logout'>Logout</button>"; 
+                        }
+                        echo "</li> 
                     </ul>
                 </nav>
+                
                 <br />
                 <br />
                 <!-- end Jomon DB menu row-->

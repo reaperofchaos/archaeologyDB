@@ -8,13 +8,13 @@
     $loginErrors = array();
     if(isset($_POST['submitted']))
     {
-        print_r(Login::check_login($_POST['username'], $_POST['pass'], $loginErrors));
         list ($check, $data) = Login::check_login($_POST['username'], $_POST['pass'], $loginErrors);
         
         if($check)
         {
             if (session_status() == PHP_SESSION_ACTIVE) {
                 echo 'Session is active';
+           
             }else
             {
                 session_start();
@@ -27,13 +27,13 @@
                 setcookie('name', $data->getName(), time()+3600, '/', '', 0, 0);
                 */
                 echo "Successfully logged in " . $_SESSION['name'] . "!<br />";
-                $url = Login::absolute_url('loggedin.php');
-                header("Location: $url");
+                //$url = Login::absolute_url('loggedin.php');
+                //header("Location: $url");
             }
         }
     }
      
-    include('loginPage.php');
+    //include('loginPage.php');
     foreach($loginErrors as $error)
     {
         echo "<div class=\"alert alert-danger alert-dismissible\">

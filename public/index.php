@@ -52,7 +52,7 @@ require_once(dirname(__FILE__)."/../private/initialize.php");
                 //author lists
                 //include 'includes/authorList.php';
                 //site lists
-                //include 'includes/siteList.php';
+               //include 'includes/siteList.php';
 
             ?>
                     <!-- end tab content -->
@@ -63,5 +63,10 @@ require_once(dirname(__FILE__)."/../private/initialize.php");
             </div>
             <!-- end container div-->
         </div>
+        <?php include 'includes/loginModal.php'; ?>
+        <?php include 'includes/registerModal.php'; ?>
+
+        <?php include 'includes/logoutModal.php'; ?>
+
     </body>
 </html>
